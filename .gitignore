@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+anh_the_tot_nghiep.jpg
+.env
+website-test-report.md
