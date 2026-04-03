@@ -3,11 +3,10 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import gradPhoto from "@/data/image/anh_the_tot_nghiep.jpg";
 import { Locale, LocaleContent, locales } from "@/data/locales";
 
 const localeOrder: Locale[] = ["en", "vi"];
-const profileImageSrc =
-  "https://drive.google.com/thumbnail?id=1MS8sK96mDsjUN7UclPxhHfNrAqQtSt-C&sz=w1000";
 
 interface NavHeaderProps {
   locale: Locale;
@@ -68,7 +67,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
         <div className="flex items-center gap-3">
           <div className="relative h-11 w-11 overflow-hidden rounded-full border border-[var(--line)] bg-white/85">
             <Image
-              src={profileImageSrc}
+              src={gradPhoto}
               alt="Tran The Khoi graduation portrait"
               fill
               sizes="44px"
