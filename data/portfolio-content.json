@@ -3,6 +3,7 @@
     "languageLabel": "EN",
     "switchLabel": "Chuyển sang tiếng Việt",
     "nav": [
+      { "label": "Snapshot", "href": "#" },
       { "label": "About", "href": "#about" },
       { "label": "Research", "href": "#research" },
       { "label": "Experience", "href": "#experience" },
@@ -215,12 +216,22 @@
         }
       ]
     },
-    "footer": "Thank you for taking the time to review my portfolio."
+    "footer": "Thank you for taking the time to review my portfolio.",
+    "chatbot": {
+      "greeting": "Hi! I'm Khoi's AI assistant. Ask me anything about his background, projects, skills, or how to reach him.",
+      "suggestions": [
+        "What projects has Khoi built?",
+        "What are his AI skills?",
+        "Tell me about his research paper.",
+        "How can I contact Khoi?"
+      ]
+    }
   },
   "vi": {
     "languageLabel": "VI",
     "switchLabel": "Switch to English",
     "nav": [
+      { "label": "Tóm tắt", "href": "#" },
       { "label": "Giới thiệu", "href": "#about" },
       { "label": "Nghiên cứu", "href": "#research" },
       { "label": "Kinh nghiệm", "href": "#experience" },
@@ -433,6 +444,15 @@
         }
       ]
     },
-    "footer": "Chân thành cảm ơn bạn đã dành thời gian xem qua hồ sơ của tôi."
+    "footer": "Chân thành cảm ơn bạn đã dành thời gian xem qua hồ sơ của tôi.",
+    "chatbot": {
+      "greeting": "Xin chào! Tôi là trợ lý AI của Khoi. Hãy hỏi tôi về dự án, kỹ năng hoặc cách liên hệ anh ấy.",
+      "suggestions": [
+        "Khoi đã xây dựng những dự án gì?",
+        "Kỹ năng AI của anh ấy là gì?",
+        "Hãy kể về luận văn nghiên cứu.",
+        "Làm thế nào để liên hệ Khoi?"
+      ]
+    }
   }
 }

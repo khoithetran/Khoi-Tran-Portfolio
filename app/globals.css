@@ -95,3 +95,19 @@ a {
     transform: translateY(0) scale(1);
   }
 }
+
+section[id],
+aside[id] {
+  scroll-margin-top: 8rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}

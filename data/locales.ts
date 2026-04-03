@@ -48,6 +48,11 @@ export type LinkItem = {
   href: string;
 };
 
+export type ChatbotContent = {
+  greeting: string;
+  suggestions: string[];
+};
+
 export type LocaleContent = {
   languageLabel: string;
   switchLabel: string;
@@ -105,6 +110,7 @@ export type LocaleContent = {
     links: LinkItem[];
   };
   footer: string;
+  chatbot: ChatbotContent;
 };
 
 export const locales = portfolioContent as Record<Locale, LocaleContent>;

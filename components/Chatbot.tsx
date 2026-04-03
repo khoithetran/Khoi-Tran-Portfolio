@@ -1,17 +1,16 @@
+// components/Chatbot.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Locale, locales } from "@/data/locales";
 
 type Message = { role: "user" | "assistant"; content: string };
 
-const SUGGESTIONS = [
-  "What projects has Khoi built?",
-  "What are his AI skills?",
-  "Tell me about his research paper.",
-  "How can I contact Khoi?",
-];
+interface ChatbotProps {
+  locale: Locale;
+}
 
-export function Chatbot() {
+export function Chatbot({ locale }: ChatbotProps) {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -19,17 +18,23 @@ export function Chatbot() {
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const chatbot = locales[locale].chatbot;
+
+  // Reset greeting when locale changes (only if just the greeting is shown)
+  useEffect(() => {
+    setMessages((prev) => {
+      if (prev.length <= 1) {
+        return [{ role: "assistant", content: chatbot.greeting }];
+      }
+      return prev;
+    });
+  }, [locale, chatbot.greeting]);
+
   useEffect(() => {
     if (open) {
       setTimeout(() => inputRef.current?.focus(), 80);
       if (messages.length === 0) {
-        setMessages([
-          {
-            role: "assistant",
-            content:
-              "Hi! I'm Khoi's AI assistant. Ask me anything about his background, projects, skills, or how to reach him.",
-          },
-        ]);
+        setMessages([{ role: "assistant", content: chatbot.greeting }]);
       }
     }
   }, [open]);
@@ -55,10 +60,7 @@ export function Chatbot() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          messages: newMessages.map((m) => ({
-            role: m.role,
-            content: m.content,
-          })),
+          messages: newMessages.map((m) => ({ role: m.role, content: m.content })),
         }),
       });
       const data = await res.json();
@@ -144,7 +146,7 @@ export function Chatbot() {
 
             {showSuggestions && (
               <div className="pt-1 flex flex-col gap-2">
-                {SUGGESTIONS.map((s) => (
+                {chatbot.suggestions.map((s) => (
                   <button
                     key={s}
                     onClick={() => send(s)}
