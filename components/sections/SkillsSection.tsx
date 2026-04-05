@@ -3,7 +3,6 @@
 
 import { useRef } from "react";
 import { LocaleContent } from "@/data/locales";
-import { SectionTitle } from "@/components/ui/SectionTitle";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 interface SkillsSectionProps {
@@ -15,22 +14,32 @@ export function SkillsSection({ content }: SkillsSectionProps) {
   useScrollReveal(ref);
 
   return (
-    <section ref={ref} id="skills" className="reveal grid gap-4 pt-8 lg:grid-cols-[0.8fr_1.2fr]">
-      <SectionTitle badge={content.skills.badge} title={content.skills.title} />
-      <div className="grid gap-4">
-        {content.skills.groups.map((group) => (
-          <article
-            key={group.title}
-            className="glass-card rounded-[2rem] p-6 md:grid md:grid-cols-[minmax(0,0.32fr)_minmax(0,1fr)] md:gap-6"
-          >
-            <h3 className="text-lg font-semibold text-slate-950">{group.title}</h3>
-            <ul className="mt-4 space-y-3 text-sm leading-7 text-[var(--muted)] [text-align:justify] md:mt-0">
-              {group.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
+    <section ref={ref} id="skills" className="reveal pt-8">
+      <div className="glass-card rounded-[2rem] p-7 sm:p-10">
+        <div className="mb-8 text-center">
+          <h2 className="font-[var(--font-serif)] text-3xl leading-tight font-semibold text-slate-950">
+            {content.skills.badge}
+            <span className="text-[var(--muted)]"> — </span>
+            {content.skills.title}
+          </h2>
+          <div className="accent-line mx-auto mt-5 h-px w-32" />
+        </div>
+
+        <div className="space-y-4">
+          {content.skills.groups.map((group) => (
+            <article
+              key={group.title}
+              className="rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] md:grid md:grid-cols-[minmax(0,0.32fr)_minmax(0,1fr)] md:gap-6"
+            >
+              <h3 className="text-lg font-semibold text-slate-950">{group.title}</h3>
+              <ul className="mt-4 space-y-3 text-sm leading-7 text-[var(--muted)] [text-align:justify] md:mt-0">
+                {group.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

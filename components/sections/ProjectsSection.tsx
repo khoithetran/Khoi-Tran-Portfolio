@@ -34,7 +34,7 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                   rel="noreferrer"
                   className="inline-flex w-fit shrink-0 whitespace-nowrap rounded-full border border-slate-950 bg-slate-950 px-4 py-2 text-xs uppercase tracking-[0.24em] !text-white transition hover:bg-slate-900"
                 >
-                  {content.sidebar.projectLinkLabel}
+                  {content.projects.projectLinkLabel}
                 </a>
               ) : null}
             </div>

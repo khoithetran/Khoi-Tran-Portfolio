@@ -4,13 +4,11 @@
 import { useState } from "react";
 import { Locale, locales } from "@/data/locales";
 import { NavHeader } from "@/components/ui/NavHeader";
-import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
-import { ResearchSection } from "@/components/sections/ResearchSection";
-import { ExperienceSection } from "@/components/sections/ExperienceSection";
-import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
-import { ContactSection } from "@/components/sections/ContactSection";
+import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { EducationSection } from "@/components/sections/EducationSection";
+import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { Chatbot } from "@/components/Chatbot";
 
 export function Portfolio() {
@@ -31,13 +29,11 @@ export function Portfolio() {
       </div>
 
       <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-5 pb-12 pt-24 sm:px-8 lg:px-10">
-        <HeroSection content={content} />
         <AboutSection content={content} />
-        <ResearchSection content={content} />
-        <ExperienceSection content={content} />
-        <ProjectsSection content={content} />
         <SkillsSection content={content} />
-        <ContactSection content={content} />
+        <ProjectsSection content={content} />
+        <EducationSection content={content} />
+        <ExperienceSection content={content} />
         <footer className="px-2 pb-3 pt-10 text-center text-sm font-bold text-[var(--muted)]">
           {content.footer}
         </footer>

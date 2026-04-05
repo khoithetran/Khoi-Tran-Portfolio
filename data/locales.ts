@@ -42,37 +42,42 @@ export type ProjectCard = {
   href?: string;
 };
 
-export type LinkItem = {
-  label: string;
-  value: string;
-  href: string;
-};
-
 export type ChatbotContent = {
   greeting: string;
   suggestions: string[];
+};
+
+export type EducationContent = {
+  badge: string;
+  title: string;
+  school: {
+    name: string;
+    degree: string;
+    period: string;
+    highlights: string[];
+  };
+  research: {
+    badge: string;
+    title: string;
+    status: string;
+    highlights: string[];
+  };
+};
+
+export type ContactDropdownItem = {
+  icon: "phone" | "email" | "linkedin";
+  label: string;
+  value: string;
+  href: string;
 };
 
 export type LocaleContent = {
   languageLabel: string;
   switchLabel: string;
   nav: NavItem[];
-  sidebar: {
-    snapshotBadge: string;
-    snapshotTitle: string;
-    snapshotItems: string[];
-    focusBadge: string;
-    focusItems: string[];
-    projectLinkLabel: string;
-  };
-  hero: {
-    eyebrow: string;
-    title: string;
-    subtitle: string;
-    description: string;
-    primaryCta: string;
-    secondaryCta: string;
-    metrics: Metric[];
+  contactDropdown: {
+    buttonLabel: string;
+    items: ContactDropdownItem[];
   };
   about: {
     badge: string;
@@ -96,6 +101,7 @@ export type LocaleContent = {
   projects: {
     badge: string;
     title: string;
+    projectLinkLabel: string;
     cards: ProjectCard[];
   };
   skills: {
@@ -103,12 +109,7 @@ export type LocaleContent = {
     title: string;
     groups: SkillGroup[];
   };
-  contact: {
-    badge: string;
-    title: string;
-    description: string;
-    links: LinkItem[];
-  };
+  education: EducationContent;
   footer: string;
   chatbot: ChatbotContent;
 };

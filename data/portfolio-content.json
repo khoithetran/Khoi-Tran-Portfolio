@@ -3,47 +3,23 @@
     "languageLabel": "EN",
     "switchLabel": "Chuyển sang tiếng Việt",
     "nav": [
-      { "label": "Snapshot", "href": "#" },
       { "label": "About", "href": "#about" },
-      { "label": "Research", "href": "#research" },
-      { "label": "Experience", "href": "#experience" },
-      { "label": "Projects", "href": "#projects" },
       { "label": "Skills", "href": "#skills" },
-      { "label": "Contact", "href": "#contact" }
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Experience", "href": "#experience" }
     ],
-    "sidebar": {
-      "snapshotBadge": "Snapshot",
-      "snapshotTitle": "An AI Product Developer profile: agents, vision systems, real metrics, and fast iteration.",
-      "snapshotItems": [
-        "LLM Integration & Prompt Engineering",
-        "Agentic AI & Tool Orchestration",
-        "Computer Vision Research — Published Paper",
-        "PoC-to-Production Mindset"
-      ],
-      "focusBadge": "Focus",
-      "focusItems": [
-        "Building agentic AI features: prompt engineering, model integration, tool orchestration",
-        "Dataset curation, model training, and metric-driven evaluation",
-        "Rapid prototyping — moving fast from concept to deployable system"
-      ],
-      "projectLinkLabel": "Project Link"
-    },
-    "hero": {
-      "eyebrow": "Tran The Khoi / AI Product Developer Portfolio",
-      "title": "Building AI products end-to-end — from LLM agents to vision systems.",
-      "subtitle": "Proficient in Python, LLMs, Agentic AI, and Computer Vision with a track record of shipping from PoC to production.",
-      "description": "I build AI products across the full lifecycle — from LLM-powered agents and RAG pipelines to production-ready Computer Vision systems. My workflow spans prompt engineering, model integration, tool orchestration, data pipeline construction, and iterative evaluation. I move fast from proof-of-concept to deployable features, always grounded by rigorous metric-driven thinking.",
-      "primaryCta": "View Projects",
-      "secondaryCta": "Read Research",
-      "metrics": [
-        { "value": "19,212", "label": "images unified and curated for model training" },
-        { "value": "0.9778", "label": "mAP@50 achieved during rigorous benchmarking" },
-        { "value": "9", "label": "detection models compared in my published paper" }
+    "contactDropdown": {
+      "buttonLabel": "Contact",
+      "items": [
+        { "icon": "phone", "label": "Phone / Zalo", "value": "0343350117", "href": "tel:0343350117" },
+        { "icon": "email", "label": "Gmail", "value": "tranthekhoi2003@gmail.com", "href": "mailto:tranthekhoi2003@gmail.com" },
+        { "icon": "linkedin", "label": "LinkedIn", "value": "Tran The Khoi", "href": "www.linkedin.com/in/tran-the-khoi" }
       ]
     },
     "about": {
       "badge": "About",
-      "title": "A versatile AI Product Developer anchored by tangible results.",
+      "title": "About Myself – Career Objective",
       "paragraphs": [
         "As a Computer Science graduate from the Industrial University of Ho Chi Minh City, my approach to AI is end-to-end and product-oriented. I combine a strong research foundation — including a published scientific paper — with hands-on experience shipping AI features from prototype to production. My strongest assets are fast learning, critical thinking, and genuine ownership over every layer of the AI stack.",
         "Beyond model training, I focus on the full product lifecycle: designing agentic workflows, integrating LLM APIs, constructing reliable data pipelines, evaluating system performance (accuracy, latency, cost), and ensuring AI solutions are viable for real-world deployment.",
@@ -78,8 +54,8 @@
       "note": "This combination of academic rigor and practical application demonstrates my R&D capabilities: careful data curation, iterative experimentation, metric-driven evaluation, and effective technical communication — skills I apply directly to AI product development."
     },
     "experience": {
-      "badge": "Experience",
-      "title": "Early professional experience paired with strong academic delivery.",
+      "badge": "Work Experience",
+      "title": "Professional experience in AI data operations.",
       "entries": [
         {
           "title": "Data Annotator",
@@ -91,23 +67,36 @@
             "Ensured strict consistency and full compliance with rigorous project quality standards.",
             "Gained first-hand insight into how raw data variations impact downstream production AI systems — informing how I design data pipelines in my own projects."
           ]
-        },
-        {
-          "title": "Computer Science Graduate",
-          "organization": "Industrial University of Ho Chi Minh City (IUH)",
-          "period": "2021 - 2025",
-          "summary": "Completed a rigorous Computer Science curriculum with a heavy emphasis on applied AI — machine learning, computer vision, and deep learning — supported by a published research paper and professional English proficiency.",
-          "highlights": [
-            "GPA: 3.18/4.00.",
-            "TOEIC: 800/990.",
-            "Developed a hands-on portfolio spanning model training, dataset engineering, LLM integration, and end-to-end AI prototyping."
-          ]
         }
       ]
+    },
+    "education": {
+      "badge": "Education",
+      "title": "Academic Background & Qualifications",
+      "school": {
+        "name": "Industrial University of Ho Chi Minh City (IUH)",
+        "degree": "Bachelor of Computer Science",
+        "period": "2021 – 2025",
+        "highlights": [
+          "GPA: 3.18 / 4.00",
+          "TOEIC: 800 / 990 — Professional English proficiency"
+        ]
+      },
+      "research": {
+        "badge": "Published Research",
+        "title": "Real-Time Detection of Construction Workers Without Safety Helmets Using the Enhanced YOLOv8s-AP Object Detection Model",
+        "status": "Accepted for publication — 2nd Student Scientific Research Conference (SSRC), Industrial University of Ho Chi Minh City.",
+        "highlights": [
+          "Evaluated 9 state-of-the-art object detection models in a unified experimental framework.",
+          "mAP@50: 0.9778  ·  Recall: 0.9515  ·  Graduation project score: 9.4 / 10 (A+)",
+          "Presented at the 2nd SSRC Conference — IUH, 2025."
+        ]
+      }
     },
     "projects": {
       "badge": "Projects",
       "title": "Selected work spanning agentic AI, multimodal systems, and object detection.",
+      "projectLinkLabel": "Project Link",
       "cards": [
         {
           "title": "LLM Document Q&A Agent with RAG Pipeline",
@@ -189,33 +178,6 @@
         }
       ]
     },
-    "contact": {
-      "badge": "Contact",
-      "title": "Open to AI Product Developer internships and product-driven AI teams.",
-      "description": "If your team values engineers who think critically about AI systems, move fast from prototype to production, and bring both research rigor and genuine ownership — I would love to connect.",
-      "links": [
-        {
-          "label": "Email",
-          "value": "tranthekhoi2003@gmail.com",
-          "href": "mailto:tranthekhoi2003@gmail.com"
-        },
-        {
-          "label": "Phone / Zalo",
-          "value": "0343350117",
-          "href": "tel:0343350117"
-        },
-        {
-          "label": "GitHub",
-          "value": "github.com/khoithetran",
-          "href": "https://github.com/khoithetran"
-        },
-        {
-          "label": "Location",
-          "value": "Thu Duc City, Ho Chi Minh City",
-          "href": "https://maps.google.com/?q=Thu+Duc+City+Ho+Chi+Minh+City"
-        }
-      ]
-    },
     "footer": "Thank you for taking the time to review my portfolio.",
     "chatbot": {
       "greeting": "Hi! I'm Khoi's AI assistant. Ask me anything about his background, projects, skills, or how to reach him.",
@@ -231,47 +193,23 @@
     "languageLabel": "VI",
     "switchLabel": "Switch to English",
     "nav": [
-      { "label": "Tóm tắt", "href": "#" },
       { "label": "Giới thiệu", "href": "#about" },
-      { "label": "Nghiên cứu", "href": "#research" },
-      { "label": "Kinh nghiệm", "href": "#experience" },
-      { "label": "Dự án", "href": "#projects" },
       { "label": "Kỹ năng", "href": "#skills" },
-      { "label": "Liên hệ", "href": "#contact" }
+      { "label": "Dự án", "href": "#projects" },
+      { "label": "Học vấn", "href": "#education" },
+      { "label": "Kinh nghiệm", "href": "#experience" }
     ],
-    "sidebar": {
-      "snapshotBadge": "Tóm tắt",
-      "snapshotTitle": "Hồ sơ AI Product Developer: agents, hệ thống thị giác, chỉ số thực tế, và tư duy lặp nhanh.",
-      "snapshotItems": [
-        "LLM Integration & Prompt Engineering",
-        "Agentic AI & Điều phối công cụ",
-        "Nghiên cứu Computer Vision — Bài báo khoa học",
-        "Tư duy từ PoC đến sản phẩm thực tế"
-      ],
-      "focusBadge": "Trọng tâm",
-      "focusItems": [
-        "Xây dựng tính năng Agentic AI: prompt engineering, tích hợp mô hình, điều phối công cụ",
-        "Xử lý dữ liệu, huấn luyện mô hình và đánh giá hiệu năng bằng chỉ số cụ thể",
-        "Prototyping nhanh — từ ý tưởng đến hệ thống có thể triển khai"
-      ],
-      "projectLinkLabel": "Xem dự án"
-    },
-    "hero": {
-      "eyebrow": "Trần Thế Khôi / Portfolio AI Product Developer",
-      "title": "Xây dựng sản phẩm AI trọn vẹn — từ LLM agents đến hệ thống thị giác máy tính.",
-      "subtitle": "Thành thạo Python, LLMs, Agentic AI, và Computer Vision với kinh nghiệm triển khai từ PoC đến sản phẩm.",
-      "description": "Tôi xây dựng sản phẩm AI xuyên suốt toàn bộ vòng đời — từ LLM-powered agents và RAG pipelines đến các hệ thống Computer Vision sẵn sàng cho môi trường sản xuất. Workflow của tôi bao gồm prompt engineering, tích hợp mô hình, điều phối công cụ, xây dựng data pipeline và đánh giá lặp. Tôi ưu tiên di chuyển nhanh từ proof-of-concept đến tính năng triển khai được, luôn dựa trên tư duy metric cụ thể.",
-      "primaryCta": "Xem Dự Án",
-      "secondaryCta": "Xem Nghiên Cứu",
-      "metrics": [
-        { "value": "19.212", "label": "ảnh được chuẩn hóa cho mô hình phát hiện mũ bảo hộ" },
-        { "value": "0.9778", "label": "chỉ số mAP@50 đạt được trong đánh giá thực nghiệm" },
-        { "value": "9", "label": "mô hình được so sánh trong bài báo khoa học đã công bố" }
+    "contactDropdown": {
+      "buttonLabel": "Liên hệ",
+      "items": [
+        { "icon": "phone", "label": "Điện thoại / Zalo", "value": "0343350117", "href": "tel:0343350117" },
+        { "icon": "email", "label": "Gmail", "value": "tranthekhoi2003@gmail.com", "href": "mailto:tranthekhoi2003@gmail.com" },
+        { "icon": "linkedin", "label": "LinkedIn", "value": "Tran The Khoi", "href": "https://www.linkedin.com/in/khoithetran" }
       ]
     },
     "about": {
       "badge": "Giới thiệu",
-      "title": "AI Product Developer đa năng, minh chứng bằng kết quả thực tế.",
+      "title": "Giới thiệu bản thân – Mục tiêu nghề nghiệp",
       "paragraphs": [
         "Tốt nghiệp chuyên ngành Khoa học Máy tính tại Đại học Công nghiệp TP.HCM, tôi tiếp cận AI theo hướng end-to-end và hướng sản phẩm. Tôi kết hợp nền tảng nghiên cứu vững chắc — bao gồm bài báo khoa học được công bố — với kinh nghiệm thực tiễn trong việc triển khai tính năng AI từ prototype đến môi trường sản xuất. Điểm mạnh lớn nhất của tôi là học nhanh, tư duy phản biện, và tinh thần chịu trách nhiệm trên toàn bộ AI stack.",
         "Ngoài việc huấn luyện mô hình, tôi tập trung vào toàn bộ vòng đời sản phẩm: thiết kế agentic workflows, tích hợp LLM APIs, xây dựng data pipeline đáng tin cậy, đánh giá hiệu năng hệ thống (accuracy, latency, cost), và đảm bảo giải pháp AI có thể vận hành trong thực tế.",
@@ -306,8 +244,8 @@
       "note": "Sự kết hợp giữa đồ án thực tế và bài báo khoa học là minh chứng cho năng lực R&D của tôi: từ xử lý dữ liệu, lặp thực nghiệm, đo lường bằng số liệu đến truyền đạt kết quả chuyên môn — những kỹ năng tôi áp dụng trực tiếp vào phát triển sản phẩm AI."
     },
     "experience": {
-      "badge": "Kinh nghiệm",
-      "title": "Kinh nghiệm thực tiễn song hành cùng nền tảng học thuật vững chắc.",
+      "badge": "Kinh nghiệm làm việc",
+      "title": "Kinh nghiệm thực tiễn trong lĩnh vực xử lý dữ liệu AI.",
       "entries": [
         {
           "title": "Data Annotator",
@@ -319,23 +257,36 @@
             "Duy trì sự nhất quán cao và tuân thủ chặt chẽ các tiêu chuẩn chất lượng khắt khe của dự án.",
             "Thấu hiểu sâu sắc cách dữ liệu thô tác động đến độ chính xác của các hệ thống AI khi đưa vào vận hành thực tế."
           ]
-        },
-        {
-          "title": "Cử nhân Khoa học Máy tính",
-          "organization": "Đại học Công nghiệp TP.HCM (IUH)",
-          "period": "2021 - 2025",
-          "summary": "Được đào tạo bài bản về khoa học máy tính với định hướng ứng dụng AI mạnh mẽ, kết hợp cùng kỹ năng nghiên cứu khoa học và tiếng Anh chuyên ngành.",
-          "highlights": [
-            "GPA: 3.18/4.00.",
-            "TOEIC: 800/990.",
-            "Xây dựng danh mục dự án thực hành: huấn luyện mô hình, data engineering, tích hợp LLM và prototyping AI end-to-end."
-          ]
         }
       ]
+    },
+    "education": {
+      "badge": "Học vấn",
+      "title": "Nền tảng học thuật & Bằng cấp",
+      "school": {
+        "name": "Đại học Công nghiệp TP.HCM (IUH)",
+        "degree": "Cử nhân Khoa học Máy tính",
+        "period": "2021 – 2025",
+        "highlights": [
+          "GPA: 3.18 / 4.00",
+          "TOEIC: 800 / 990 — Tiếng Anh chuyên ngành thành thạo"
+        ]
+      },
+      "research": {
+        "badge": "Bài báo khoa học",
+        "title": "Real-Time Detection of Construction Workers Without Safety Helmets Using the Enhanced YOLOv8s-AP Object Detection Model",
+        "status": "Được chấp nhận đăng — Hội nghị NCKH Sinh viên lần 2 (SSRC), Đại học Công nghiệp TP.HCM.",
+        "highlights": [
+          "Đánh giá 9 mô hình nhận diện đối tượng tiên tiến trong cùng một điều kiện thực nghiệm.",
+          "mAP@50: 0.9778  ·  Recall: 0.9515  ·  Điểm đồ án tốt nghiệp: 9.4 / 10 (A+)",
+          "Báo cáo tại Hội nghị NCKH Sinh viên lần 2 — IUH, 2025."
+        ]
+      }
     },
     "projects": {
       "badge": "Dự án",
       "title": "Các dự án tiêu biểu: từ Agentic AI, hệ thống đa phương thức đến nhận diện hình ảnh.",
+      "projectLinkLabel": "Xem dự án",
       "cards": [
         {
           "title": "LLM Document Q&A Agent với RAG Pipeline",
@@ -414,33 +365,6 @@
             "Khả năng thích nghi: Đọc hiểu tài liệu kỹ thuật và áp dụng công cụ mới nhanh chóng — từ nghiên cứu đến prototype hoạt động.",
             "Giao tiếp: Tiếng Anh chuyên ngành thành thạo (TOEIC 800/990); sẵn sàng tham gia thảo luận kỹ thuật, code review và chia sẻ kiến thức."
           ]
-        }
-      ]
-    },
-    "contact": {
-      "badge": "Liên hệ",
-      "title": "Đang tìm kiếm vị trí AI Product Developer Intern tại các đội ngũ phát triển sản phẩm AI.",
-      "description": "Nếu công ty bạn cần người tư duy phản biện về hệ thống AI, di chuyển nhanh từ prototype đến production, và mang cả sự nghiêm túc trong nghiên cứu lẫn tinh thần chịu trách nhiệm thực tế — tôi rất mong được kết nối.",
-      "links": [
-        {
-          "label": "Email",
-          "value": "tranthekhoi2003@gmail.com",
-          "href": "mailto:tranthekhoi2003@gmail.com"
-        },
-        {
-          "label": "Điện thoại / Zalo",
-          "value": "0343350117",
-          "href": "tel:0343350117"
-        },
-        {
-          "label": "GitHub",
-          "value": "github.com/khoithetran",
-          "href": "https://github.com/khoithetran"
-        },
-        {
-          "label": "Khu vực làm việc",
-          "value": "Thủ Đức, TP. Hồ Chí Minh",
-          "href": "https://maps.google.com/?q=Thu+Duc+City+Ho+Chi+Minh+City"
         }
       ]
     },

@@ -25,10 +25,7 @@ body {
   min-height: 100vh;
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
-  background:
-    radial-gradient(circle at top left, rgba(15, 109, 255, 0.14), transparent 36%),
-    radial-gradient(circle at 85% 12%, rgba(33, 98, 255, 0.1), transparent 24%),
-    linear-gradient(180deg, #fbfcff 0%, #f3f6fb 54%, #eef2f8 100%);
+  background: linear-gradient(180deg, #79d8f2 0%, #c2eef9 40%, #e8f8fd 100%);
 }
 
 a {
@@ -110,4 +107,46 @@ aside[id] {
 .reveal[data-visible="true"] {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Contact button metallic shimmer + scale pulse */
+.contact-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-btn:hover {
+  animation: contact-pulse 0.5s ease-out forwards;
+}
+
+.contact-btn::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 45%;
+  height: 140%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.82) 50%,
+    transparent 100%
+  );
+  transform: translateX(-160%) skewX(-18deg);
+  pointer-events: none;
+}
+
+.contact-btn:hover::after {
+  animation: contact-shimmer 0.5s ease-out forwards;
+}
+
+@keyframes contact-pulse {
+  0%   { transform: scale(1); }
+  35%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+@keyframes contact-shimmer {
+  0%   { transform: translateX(-160%) skewX(-18deg); }
+  100% { transform: translateX(420%) skewX(-18deg); }
 }
