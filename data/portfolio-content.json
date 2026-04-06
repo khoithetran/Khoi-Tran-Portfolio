@@ -14,7 +14,7 @@
       "items": [
         { "icon": "phone", "label": "Phone / Zalo", "value": "0343350117", "href": "tel:0343350117" },
         { "icon": "email", "label": "Gmail", "value": "tranthekhoi2003@gmail.com", "href": "mailto:tranthekhoi2003@gmail.com" },
-        { "icon": "linkedin", "label": "LinkedIn", "value": "Tran The Khoi", "href": "www.linkedin.com/in/tran-the-khoi" }
+        { "icon": "linkedin", "label": "LinkedIn", "value": "Tran The Khoi", "href": "https://www.linkedin.com/in/tran-the-khoi" }
       ]
     },
     "about": {
@@ -95,35 +95,21 @@
     },
     "projects": {
       "badge": "Projects",
-      "title": "Selected work spanning agentic AI, multimodal systems, and object detection.",
+      "title": "Selected work spanning computer vision, multimodal AI, and real-time systems.",
       "projectLinkLabel": "Project Link",
       "cards": [
         {
-          "title": "LLM Document Q&A Agent with RAG Pipeline",
-          "period": "Mar 2025 - Jun 2025",
-          "description": "Designed and built an end-to-end Retrieval-Augmented Generation (RAG) pipeline using LangChain. Integrated an LLM backend with a ChromaDB vector store, applied prompt engineering strategies (few-shot, chain-of-thought), implemented tool orchestration for web search fallback, and built a Streamlit interface for interactive document-grounded Q&A.",
-          "stack": ["LangChain", "OpenAI API", "ChromaDB", "Python", "Streamlit"],
-          "outcome": "Delivered a functional multi-turn QA agent with source-grounded responses. Evaluated trade-offs between retrieval quality, response latency, and context window cost — directly applicable to LLMOps thinking.",
-          "href": "https://github.com/khoithetran"
-        },
-        {
-          "title": "Deep Learning-Based Safety Helmet Detection",
-          "period": "Sep 2025 - Dec 2025",
-          "description": "Unified diverse datasets, standardized labeling schemas, trained detection models using PyTorch, and optimized performance for real-world safety compliance. Full MLOps-style workflow: data versioning, experiment tracking, hyperparameter tuning via Ray, and final benchmarking.",
-          "stack": [
-            "PyTorch",
-            "Ultralytics YOLOv8",
-            "OpenCV",
-            "Albumentations",
-            "Ray",
-            "Kaggle"
-          ],
-          "outcome": "Achieved >95% accuracy per class, resulting in an A+ academic evaluation and a peer-reviewed publication.",
-          "href": "https://surl.vn/sm5"
+          "title": "Real-Time Safety Helmet Detection System",
+          "period": "09.2025 – Present",
+          "description": "Built a full-stack AI production system for real-time PPE compliance monitoring. Converted YOLOv8 weights to ONNX runtime, reducing Docker image size from ~5 GB to ~1.8 GB. Integrated ByteTrack for multi-object person tracking across video streams. Deployed as a single Docker container with a React + Vite frontend and FastAPI backend on Hugging Face Spaces.",
+          "stack": ["YOLOv8", "ONNX Runtime", "FastAPI", "React", "Vite", "Docker", "ByteTrack", "Python"],
+          "outcome": "mAP@50: 0.9778 · Recall: 0.9515 · Graduation score: 9.4/10 (A+). Peer-reviewed publication accepted at the 2nd SSRC Conference, IUH 2025.",
+          "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
+          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection"
         },
         {
           "title": "Multimodal Image Captioning with BLIP",
-          "period": "Oct 2024 - Jan 2025",
+          "period": "10.2024 – 01.2025",
           "description": "Fine-tuned a BLIP-based captioning model on the COCO 2017 dataset, focusing on decoder-side optimization and clean experimental tracking. Explored multimodal model behavior, evaluated output quality against BLEU metrics, and iterated on training configurations.",
           "stack": ["Transformers", "Torch", "Pillow", "Matplotlib"],
           "outcome": "Delivered a functional prototype capable of generating contextual captions from image inputs, deepening understanding of vision-language model integration.",
@@ -131,7 +117,7 @@
         },
         {
           "title": "Real-Time Hand Gesture Recognition",
-          "period": "Feb 2025 - May 2025",
+          "period": "02.2025 – 05.2025",
           "description": "Engineered a low-latency webcam gesture classifier, leveraging Mediapipe keypoints as structured features for ML training. Focused on fast inference and reliable real-world performance.",
           "stack": ["TensorFlow", "scikit-learn", "Mediapipe", "NumPy", "Pandas"],
           "outcome": "Secured >99% accuracy on the trained dataset, enabling reliable directional control interfaces.",
@@ -285,35 +271,21 @@
     },
     "projects": {
       "badge": "Dự án",
-      "title": "Các dự án tiêu biểu: từ Agentic AI, hệ thống đa phương thức đến nhận diện hình ảnh.",
+      "title": "Các dự án tiêu biểu về Computer Vision, AI đa phương thức và hệ thống thời gian thực.",
       "projectLinkLabel": "Xem dự án",
       "cards": [
         {
-          "title": "LLM Document Q&A Agent với RAG Pipeline",
-          "period": "03/2025 - 06/2025",
-          "description": "Thiết kế và xây dựng pipeline Retrieval-Augmented Generation (RAG) end-to-end sử dụng LangChain. Tích hợp LLM backend với ChromaDB vector store, áp dụng các chiến lược prompt engineering (few-shot, chain-of-thought), triển khai tool orchestration, và xây dựng giao diện Streamlit cho Q&A dựa trên tài liệu.",
-          "stack": ["LangChain", "OpenAI API", "ChromaDB", "Python", "Streamlit"],
-          "outcome": "Hệ thống QA multi-turn hoạt động với phản hồi có nguồn gốc rõ ràng. Đánh giá trade-off giữa chất lượng retrieval, latency và chi phí context — tư duy trực tiếp ứng dụng vào LLMOps.",
-          "href": "https://github.com/khoithetran"
+          "title": "Hệ thống Phát hiện Mũ bảo hộ Thời gian thực",
+          "period": "09.2025 – Present",
+          "description": "Xây dựng hệ thống AI full-stack giám sát tuân thủ an toàn PPE theo thời gian thực. Chuyển đổi trọng số YOLOv8 sang ONNX runtime, giảm kích thước Docker image từ ~5 GB xuống ~1.8 GB. Tích hợp ByteTrack để theo dõi đa người trong luồng video. Triển khai một Docker container duy nhất với frontend React + Vite và backend FastAPI trên Hugging Face Spaces.",
+          "stack": ["YOLOv8", "ONNX Runtime", "FastAPI", "React", "Vite", "Docker", "ByteTrack", "Python"],
+          "outcome": "mAP@50: 0.9778 · Recall: 0.9515 · Điểm tốt nghiệp: 9.4/10 (A+). Bài báo khoa học được chấp nhận tại Hội nghị SSRC lần 2, IUH 2025.",
+          "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
+          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection"
         },
         {
-          "title": "Phát hiện Mũ bảo hộ An toàn bằng Deep Learning",
-          "period": "09/2025 - 12/2025",
-          "description": "Tích hợp đa nguồn dữ liệu, chuẩn hóa nhãn, lập trình huấn luyện mô hình detection bằng PyTorch và tối ưu hóa cho bài toán giám sát an toàn. Quy trình MLOps-style: versioning dữ liệu, theo dõi thực nghiệm, hyperparameter tuning với Ray, và benchmark cuối cùng.",
-          "stack": [
-            "PyTorch",
-            "Ultralytics YOLOv8",
-            "OpenCV",
-            "Albumentations",
-            "Ray",
-            "Kaggle"
-          ],
-          "outcome": "Đạt độ chính xác trên 95% cho từng phân lớp, nhận điểm A+ và bài báo khoa học được công nhận.",
-          "href": "https://surl.vn/sm5"
-        },
-        {
-          "title": "Image Captioning với mô hình BLIP",
-          "period": "10/2024 - 01/2025",
+          "title": "Image Captioning đa phương thức với BLIP",
+          "period": "10.2024 – 01.2025",
           "description": "Fine-tune mô hình BLIP trên tập COCO 2017, tối ưu hóa decoder và thiết lập luồng thực nghiệm rõ ràng. Khám phá hành vi mô hình đa phương thức và đánh giá chất lượng đầu ra qua chỉ số BLEU.",
           "stack": ["Transformers", "Torch", "Pillow", "Matplotlib"],
           "outcome": "Nguyên mẫu multimodal hoạt động có khả năng tự động sinh mô tả từ hình ảnh, củng cố hiểu biết về tích hợp vision-language model.",
@@ -321,7 +293,7 @@
         },
         {
           "title": "Nhận diện Cử chỉ tay theo Thời gian thực",
-          "period": "02/2025 - 05/2025",
+          "period": "02.2025 – 05.2025",
           "description": "Phát triển bộ phân loại cử chỉ qua webcam với độ trễ thấp, ứng dụng Mediapipe để trích xuất keypoints làm dữ liệu đầu vào có cấu trúc cho ML training.",
           "stack": ["TensorFlow", "scikit-learn", "Mediapipe", "NumPy", "Pandas"],
           "outcome": "Đạt độ chính xác ấn tượng trên 99% cho các bài toán điều hướng bằng cử chỉ.",

@@ -4,7 +4,9 @@
       "Bash(npm run:*)",
       "Bash(bash:*)",
       "Bash(npx tsc:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "WebFetch(domain:surl.vn)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

@@ -17,12 +17,11 @@ export function SkillsSection({ content }: SkillsSectionProps) {
     <section ref={ref} id="skills" className="reveal pt-8">
       <div className="glass-card rounded-[2rem] p-7 sm:p-10">
         <div className="mb-8 text-center">
-          <h2 className="font-[var(--font-serif)] text-3xl leading-tight font-semibold text-slate-950">
+          <h2 className="font-[var(--font-serif)] text-3xl font-semibold text-slate-950">
             {content.skills.badge}
-            <span className="text-[var(--muted)]"> — </span>
-            {content.skills.title}
           </h2>
-          <div className="accent-line mx-auto mt-5 h-px w-32" />
+          <p className="mt-2 text-sm text-[var(--muted)]">{content.skills.title}</p>
+          <div className="accent-line mx-auto mt-4 h-px w-32" />
         </div>
 
         <div className="space-y-4">

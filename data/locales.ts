@@ -40,6 +40,7 @@ export type ProjectCard = {
   stack: string[];
   outcome: string;
   href?: string;
+  hrefHuggingFace?: string;
 };
 
 export type ChatbotContent = {

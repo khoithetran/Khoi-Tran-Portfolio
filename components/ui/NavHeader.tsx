@@ -56,8 +56,16 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
   const [activeSection, setActiveSection] = useState<string>("about");
   const [menuOpen, setMenuOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
+  const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+
+  function handleCopy(key: string, value: string) {
+    navigator.clipboard.writeText(value).then(() => {
+      setCopiedKey(key);
+      setTimeout(() => setCopiedKey(null), 1800);
+    });
+  }
 
   const getSectionKey = (href: string) => href.slice(1);
 
@@ -133,7 +141,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
           <div>
             <p className="text-sm font-medium text-slate-900">Tran The Khoi</p>
             <p className="font-[var(--font-mono)] text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
-              AI Product Developer
+              AI Engineer
             </p>
           </div>
         </div>
@@ -169,20 +177,34 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
                 <div className="flex flex-col gap-1">
                   {content.contactDropdown.items.map((item) => {
                     const Icon = iconMap[item.icon];
+                    const isCopyable = item.icon === "phone" || item.icon === "email";
+                    const isCopied = copiedKey === item.icon;
                     return (
                       <a
                         key={item.icon}
-                        href={item.href}
+                        href={isCopyable ? undefined : item.href}
                         target={item.icon === "linkedin" ? "_blank" : undefined}
                         rel={item.icon === "linkedin" ? "noopener noreferrer" : undefined}
-                        onClick={() => setContactOpen(false)}
-                        className="group flex items-center gap-3 rounded-[1rem] px-4 py-3 text-sm transition hover:bg-black/50"
+                        onClick={(e) => {
+                          if (isCopyable) {
+                            e.preventDefault();
+                            handleCopy(item.icon, item.value);
+                          } else {
+                            setContactOpen(false);
+                          }
+                        }}
+                        className="group flex items-center gap-3 rounded-[1rem] px-4 py-3 text-sm transition hover:bg-black/50 cursor-pointer select-none"
                       >
                         <span className="text-[var(--muted)] transition group-hover:text-white/70"><Icon /></span>
-                        <div className="min-w-0">
+                        <div className="min-w-0 flex-1">
                           <p className="text-xs text-[var(--muted)] transition group-hover:text-white/70">{item.label}</p>
                           <p className="truncate font-medium text-slate-900 transition group-hover:text-white">{item.value}</p>
                         </div>
+                        {isCopyable && (
+                          <span className={`ml-auto text-xs font-medium transition-all duration-300 ${isCopied ? "opacity-100 text-emerald-500 group-hover:text-emerald-400" : "opacity-0"}`}>
+                            Copied!
+                          </span>
+                        )}
                       </a>
                     );
                   })}
