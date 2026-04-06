@@ -5,19 +5,11 @@
       "Bash(bash:*)",
       "Bash(npx tsc:*)",
       "Bash(wc:*)",
-      "WebFetch(domain:surl.vn)",
-      "WebFetch(domain:github.com)",
-      "Bash(node -e \"const d=require\\('./data/portfolio-content.json'\\); d.en.projects.cards.forEach\\(c=>console.log\\(c.title,'|',c.period,'|',c.href,'|',c.hrefHuggingFace\\)\\)\")",
-      "Bash(node -e \"const d=require\\('./data/portfolio-content.json'\\); console.log\\(d.en.education.school.degree, '|', d.vi.education.school.degree\\)\")",
       "Bash(node -)",
-      "Bash(node -e \"const d=require\\('./data/portfolio-content.json'\\); d.en.contactDropdown.items.forEach\\(i=>console.log\\(i.icon, i.href\\)\\); console.log\\('---'\\); d.vi.contactDropdown.items.forEach\\(i=>console.log\\(i.icon, i.href\\)\\)\")",
-      "mcp__plugin_playwright_playwright__browser_navigate",
-      "Bash(curl -s -X POST http://localhost:3000/api/chat -H 'Content-Type: application/json' -d '{\"messages\":[{\"role\":\"user\",\"content\":\"Tell me about Khoi\"}]}')",
-      "Bash(curl -s 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyD567m9K2745YMw6Rk74eVni4FTejbHzP8' -H 'Content-Type: application/json' -d '{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"hi\"}]}]}')",
-      "Bash(curl -s 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyD567m9K2745YMw6Rk74eVni4FTejbHzP8' -H 'Content-Type: application/json' -d '{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"hi\"}]}]}')",
-      "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models?key=AIzaSyD567m9K2745YMw6Rk74eVni4FTejbHzP8\")",
-      "Bash(curl -s 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=AIzaSyD567m9K2745YMw6Rk74eVni4FTejbHzP8' -H 'Content-Type: application/json' -d '{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"hi\"}]}]}')",
-      "Bash(curl -s 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyD567m9K2745YMw6Rk74eVni4FTejbHzP8' -H 'Content-Type: application/json' -d '{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"hi\"}]}]}')"
+      "Bash(node -e:*)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat:*)",
+      "Bash(sed -i:*)",
+      "mcp__plugin_playwright_playwright__browser_navigate"
     ]
   }
 }
