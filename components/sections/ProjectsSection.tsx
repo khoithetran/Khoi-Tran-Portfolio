@@ -2,13 +2,15 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { LocaleContent } from "@/data/locales";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import demo1 from "@/data/project-demo/safety-helmet-detection-demo/image_demo_1.jpg";
+import demo2 from "@/data/project-demo/safety-helmet-detection-demo/image_demo_2.jpg";
 
 interface ProjectsSectionProps {
   content: LocaleContent;
 }
-
 
 export function ProjectsSection({ content }: ProjectsSectionProps) {
   const ref = useRef<HTMLElement>(null);
@@ -36,8 +38,8 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
               >
                 {/* Timeline column */}
                 <div className="flex w-36 shrink-0 flex-col items-center">
-                  <span className="font-[var(--font-mono)] text-sm font-semibold text-slate-950 whitespace-nowrap">{card.period}</span>
-                  <div className="mt-2 min-h-[2rem] w-px flex-1 bg-slate-200" />
+                  <span className="font-[var(--font-mono)] text-base font-semibold text-slate-950 whitespace-nowrap">{card.period}</span>
+                  <div className="mt-2 min-h-[2rem] w-0.5 flex-1 bg-slate-200" />
                 </div>
 
                 {/* Content column */}
@@ -78,9 +80,26 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                       </span>
                     ))}
                   </div>
-                  <p className="mt-4 rounded-[1.3rem] border border-[var(--line)] bg-white/75 px-4 py-4 text-sm leading-7 text-slate-700 [text-align:justify]">
-                    {card.outcome}
-                  </p>
+                  <div className="mt-4 rounded-[1.3rem] border border-[var(--line)] bg-white/75 px-4 py-4 space-y-3">
+                    <p className="text-sm leading-7 text-slate-700 [text-align:justify]">
+                      {card.outcome}
+                    </p>
+                    {card.demoCaption && (
+                      <>
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="relative overflow-hidden rounded-[1rem] border border-[var(--line)]" style={{ height: "271.94px" }}>
+                            <Image src={demo1} alt="Demo detection result 1" fill className="object-cover object-top" />
+                          </div>
+                          <div className="relative overflow-hidden rounded-[1rem] border border-[var(--line)]" style={{ height: "271.94px" }}>
+                            <Image src={demo2} alt="Demo detection result 2" fill className="object-cover object-top" />
+                          </div>
+                        </div>
+                        <p className="text-sm leading-7 text-slate-700 [text-align:justify]">
+                          {card.demoCaption}
+                        </p>
+                      </>
+                    )}
+                  </div>
                 </div>
               </article>
             );

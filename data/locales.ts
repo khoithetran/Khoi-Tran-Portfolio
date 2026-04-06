@@ -12,14 +12,6 @@ export type Metric = {
   label: string;
 };
 
-export type Publication = {
-  badge: string;
-  title: string;
-  status: string;
-  summary: string;
-  highlights: string[];
-};
-
 export type TimelineEntry = {
   title: string;
   organization: string;
@@ -41,6 +33,7 @@ export type ProjectCard = {
   outcome: string;
   href?: string;
   hrefHuggingFace?: string;
+  demoCaption?: string;
 };
 
 export type ChatbotContent = {
@@ -60,8 +53,10 @@ export type EducationContent = {
   research: {
     badge: string;
     title: string;
+    href: string;
     status: string;
-    highlights: string[];
+    abstract: string;
+    awardCaption: string;
   };
 };
 
@@ -84,15 +79,6 @@ export type LocaleContent = {
     badge: string;
     title: string;
     paragraphs: string[];
-  };
-  research: {
-    badge: string;
-    title: string;
-    overview: string;
-    focusAreas: string[];
-    metrics: Metric[];
-    publication: Publication;
-    note: string;
   };
   experience: {
     badge: string;

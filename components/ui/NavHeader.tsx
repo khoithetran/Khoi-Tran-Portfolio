@@ -6,7 +6,12 @@ import { useState, useEffect, useRef } from "react";
 import gradPhoto from "@/data/image/anh_the_tot_nghiep.jpg";
 import { Locale, LocaleContent, locales } from "@/data/locales";
 
-const localeOrder: Locale[] = ["en", "vi"];
+const localeOrder: Locale[] = ["vi", "en"];
+
+const identity: Record<Locale, { name: string; role: string }> = {
+  vi: { name: "Trần Thế Khôi", role: "Kỹ sư Trí tuệ Nhân tạo/Máy học" },
+  en: { name: "Tran The Khoi", role: "AI/ML Engineer" },
+};
 
 const flagMap: Record<Locale, { src: string; alt: string }> = {
   en: { src: "https://flagcdn.com/gb.svg", alt: "English" },
@@ -139,9 +144,9 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
             />
           </div>
           <div>
-            <p className="text-sm font-medium text-slate-900">Tran The Khoi</p>
+            <p className="text-sm font-medium text-slate-900">{identity[locale].name}</p>
             <p className="font-[var(--font-mono)] text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
-              AI Engineer
+              {identity[locale].role}
             </p>
           </div>
         </div>

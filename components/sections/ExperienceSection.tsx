@@ -29,22 +29,23 @@ export function ExperienceSection({ content }: ExperienceSectionProps) {
           {exp.entries.map((entry) => (
             <article
               key={entry.title}
-              className="rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] md:grid md:grid-cols-[minmax(0,0.32fr)_minmax(0,1fr)] md:gap-6"
+              className="rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] flex gap-5"
             >
-              <div>
-                <p className="font-[var(--font-mono)] text-xs uppercase tracking-[0.3em] text-[var(--muted)]">
-                  {entry.organization}
-                </p>
-                <h3 className="mt-2 text-lg font-semibold text-slate-950">{entry.title}</h3>
-                <span className="mt-3 inline-block rounded-full border border-[var(--line)] bg-slate-50 px-3 py-1 text-xs uppercase tracking-[0.2em] text-slate-600">
-                  {entry.period}
-                </span>
+              {/* Timeline column */}
+              <div className="flex w-36 shrink-0 flex-col items-center">
+                <span className="font-[var(--font-mono)] text-base font-semibold text-slate-950 whitespace-nowrap">{entry.period}</span>
+                <div className="mt-2 min-h-[2rem] w-0.5 flex-1 bg-slate-200" />
               </div>
-              <div className="mt-4 space-y-3 md:mt-0">
-                <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
+              {/* Content column */}
+              <div className="min-w-0 flex-1">
+                <h3 className="text-lg font-semibold text-slate-950">{entry.organization}</h3>
+                <p className="mt-1 font-[var(--font-mono)] text-xs uppercase tracking-[0.3em] text-[var(--muted)]">
+                  {entry.title}
+                </p>
+                <p className="mt-3 text-sm leading-7 text-[var(--muted)] [text-align:justify]">
                   {entry.summary}
                 </p>
-                <ul className="space-y-3">
+                <ul className="mt-3 space-y-3">
                   {entry.highlights.map((highlight) => (
                     <li
                       key={highlight}

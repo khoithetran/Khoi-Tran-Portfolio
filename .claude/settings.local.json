@@ -6,7 +6,10 @@
       "Bash(npx tsc:*)",
       "Bash(wc:*)",
       "WebFetch(domain:surl.vn)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(node -e \"const d=require\\('./data/portfolio-content.json'\\); d.en.projects.cards.forEach\\(c=>console.log\\(c.title,'|',c.period,'|',c.href,'|',c.hrefHuggingFace\\)\\)\")",
+      "Bash(node -e \"const d=require\\('./data/portfolio-content.json'\\); console.log\\(d.en.education.school.degree, '|', d.vi.education.school.degree\\)\")",
+      "Bash(node -)"
     ]
   }
 }

@@ -12,7 +12,7 @@ import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { Chatbot } from "@/components/Chatbot";
 
 export function Portfolio() {
-  const [locale, setLocale] = useState<Locale>("en");
+  const [locale, setLocale] = useState<Locale>("vi");
   const content = locales[locale];
 
   return (

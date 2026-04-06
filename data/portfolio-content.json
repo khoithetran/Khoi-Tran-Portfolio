@@ -3,70 +3,143 @@
     "languageLabel": "EN",
     "switchLabel": "Chuyển sang tiếng Việt",
     "nav": [
-      { "label": "About", "href": "#about" },
-      { "label": "Skills", "href": "#skills" },
-      { "label": "Projects", "href": "#projects" },
-      { "label": "Education", "href": "#education" },
-      { "label": "Experience", "href": "#experience" }
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Skills",
+        "href": "#skills"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Education",
+        "href": "#education"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      }
     ],
     "contactDropdown": {
       "buttonLabel": "Contact",
       "items": [
-        { "icon": "phone", "label": "Phone / Zalo", "value": "0343350117", "href": "tel:0343350117" },
-        { "icon": "email", "label": "Gmail", "value": "tranthekhoi2003@gmail.com", "href": "mailto:tranthekhoi2003@gmail.com" },
-        { "icon": "linkedin", "label": "LinkedIn", "value": "Tran The Khoi", "href": "https://www.linkedin.com/in/tran-the-khoi" }
+        {
+          "icon": "phone",
+          "label": "Phone / Zalo",
+          "value": "0343350117",
+          "href": "tel:0343350117"
+        },
+        {
+          "icon": "email",
+          "label": "Gmail",
+          "value": "tranthekhoi2003@gmail.com",
+          "href": "mailto:tranthekhoi2003@gmail.com"
+        },
+        {
+          "icon": "linkedin",
+          "label": "LinkedIn",
+          "value": "Tran The Khoi",
+          "href": "https://www.linkedin.com/in/tran-the-khoi"
+        }
       ]
     },
     "about": {
       "badge": "About",
       "title": "About Myself – Career Objective",
       "paragraphs": [
-        "As a Computer Science graduate from the Industrial University of Ho Chi Minh City, my approach to AI is end-to-end and product-oriented. I combine a strong research foundation — including a published scientific paper — with hands-on experience shipping AI features from prototype to production. My strongest assets are fast learning, critical thinking, and genuine ownership over every layer of the AI stack.",
-        "Beyond model training, I focus on the full product lifecycle: designing agentic workflows, integrating LLM APIs, constructing reliable data pipelines, evaluating system performance (accuracy, latency, cost), and ensuring AI solutions are viable for real-world deployment.",
-        "I am actively building hands-on expertise in LLM frameworks (LangChain), Retrieval-Augmented Generation (RAG), and agentic tool orchestration — complementing my deep roots in Computer Vision and deep learning. When a project demands new skills, I adapt fast, consult the latest research, and ship."
+        "I hold a Degree of Engineering in Computer Science from IUH, currently focused on advancing my career as an AI/ML Engineer. With a solid foundation in Computer Vision and Deep Learning, my short-term goal (next 2-3 years) is to contribute to production-grade projects by optimizing architectures like YOLO or RT-DETR and ensuring efficient deployment. Simultaneously, I am deepening my expertise as an LLMs Engineer, specifically in building RAG systems and perfecting Prompt Engineering for high-precision language solutions.",
+        "In the long term, I aspire to become an AI Expert capable of designing complex Multimodal AI systems. My focus remains on systemic thinking: from constructing clean data pipelines and managing model lifecycles (MLOps) to solving critical challenges in performance and deployment costs. I am driven to deliver AI products that provide sustainable value to both users and businesses."
       ]
     },
-    "research": {
-      "badge": "Thesis & Research",
-      "title": "Safety Helmet Detection: Rigorous benchmarking leading to a published scientific paper.",
-      "overview": "My graduation thesis addressed the real-time detection of construction workers lacking safety helmets. The project required comprehensive dataset consolidation, label standardization, architecture refinement, and extensive evaluation against state-of-the-art object detection baselines — a full R&D cycle from data to publication.",
-      "focusAreas": [
-        "Proposed an enhanced YOLOv8s-AP architecture integrating ASFF and Pseudo-DCN to improve feature fusion and small-object recognition.",
-        "Conducted a fair, controlled comparison across multiple YOLO variants, RT-DETR, and Faster R-CNN.",
-        "Prioritized the balance between high accuracy and low inference latency for practical safety monitoring applications."
-      ],
-      "metrics": [
-        { "value": "SSRC", "label": "Presented at the 2nd Student Scientific Research Conference" },
-        { "value": "9.4/10", "label": "Graduation project evaluation score (A+ equivalent)" },
-        { "value": "0.9515", "label": "Recall metric reported in the publication" }
-      ],
-      "publication": {
-        "badge": "Accepted Paper",
-        "title": "Real-Time Detection of Construction Workers Without Safety Helmets Using the Enhanced YOLOv8s-AP Object Detection Model",
-        "status": "Accepted for publication in the proceedings/journal of the 2nd SSRC conference organized by Industrial University of Ho Chi Minh City.",
-        "summary": "Alongside the core thesis, our research team formalized the benchmarking methodology and the proposed YOLOv8s-AP enhancements into a peer-reviewed scientific paper.",
-        "highlights": [
-          "Evaluated 9 modern object detection models within a unified experimental framework.",
-          "Utilized a curated 5,000-image Hard Hat Detection dataset with a strict 80/10/10 split for training, validation, and testing.",
-          "Demonstrated superior performance with an mAP@50 of 0.9778 and a Recall of 0.9515, maintaining real-time processing capabilities."
-        ]
-      },
-      "note": "This combination of academic rigor and practical application demonstrates my R&D capabilities: careful data curation, iterative experimentation, metric-driven evaluation, and effective technical communication — skills I apply directly to AI product development."
-    },
-    "experience": {
-      "badge": "Work Experience",
-      "title": "Professional experience in AI data operations.",
-      "entries": [
+    "skills": {
+      "badge": "Skills",
+      "title": "Core competencies acquired through formal education and ongoing self-research.",
+      "groups": [
         {
-          "title": "Data Annotator",
-          "organization": "Alchera Vietnam",
-          "period": "Aug 2025 - Oct 2025",
-          "summary": "Supported critical data preparation phases for Computer Vision projects, shaping a deep understanding of data-centric AI — where high-quality inputs directly determine model performance in production.",
-          "highlights": [
-            "Executed precise annotations using bounding boxes, polygons, and classification schemas.",
-            "Ensured strict consistency and full compliance with rigorous project quality standards.",
-            "Gained first-hand insight into how raw data variations impact downstream production AI systems — informing how I design data pipelines in my own projects."
+          "title": "Computer Vision & Machine Learning",
+          "items": [
+            "Core CV Operations: Proficient in Image Pre-processing, Feature Extraction, Data Augmentation (Albumentations), and Model Optimization (ONNX, TensorRT).",
+            "ML Tasks: Extensive experience in Object Detection (YOLO v5-v11, RT-DETR), Image Classification, Semantic/Instance Segmentation, and OCR.",
+            "Evaluation: Expert grasp of mAP, Precision-Recall curves, F1-score, and Latency benchmarking for experimental frameworks."
           ]
+        },
+        {
+          "title": "LLMs & Generative AI (Self-Research)",
+          "items": [
+            "Frameworks: Researching RAG pipelines using LangChain and Vector Databases (ChromaDB).",
+            "Prompt Engineering: Exploring Few-shot, Chain-of-thought, and System Prompt design for reliable model behavior.",
+            "Integration: Learning to monitor cost, latency, and response accuracy in LLM-powered applications."
+          ]
+        },
+        {
+          "title": "Engineering & Tooling",
+          "items": [
+            "Frameworks: Python (Primary), PyTorch, TensorFlow, scikit-learn, OpenCV.",
+            "MLOps: Experience in Experiment tracking, Hyperparameter tuning (Ray Tune), and building reproducible training pipelines."
+          ]
+        },
+        {
+          "title": "Soft Skills",
+          "items": [
+            "Communication & Documentation: Effective technical communication and proficient reading/comprehension of scientific research papers.",
+            "Work Management: Strong time management, deadline-oriented mindset, and ability to perform effectively under high-pressure environments."
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "badge": "Projects",
+      "title": "Featured projects under active development and continuous optimization.",
+      "projectLinkLabel": "Project Link",
+      "cards": [
+        {
+          "title": "Real-Time Safety Helmet Detection System",
+          "period": "09.2025 – Present",
+          "description": "A full-stack implementation of the SSRC research. Optimized YOLOv8 for real-time inference using ONNX Runtime and integrated ByteTrack for person tracking. Deployed via FastAPI/React on Hugging Face Spaces.",
+          "stack": [
+            "YOLOv8",
+            "ONNX Runtime",
+            "FastAPI",
+            "React",
+            "Docker",
+            "ByteTrack",
+            "Python"
+          ],
+          "outcome": "mAP@50: 0.9778. Peer-reviewed publication and A+ academic evaluation.",
+          "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
+          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection",
+          "demoCaption": "Detection results from the YOLOv8s-AP model demonstrate high accuracy on fine-grained details — well-suited to construction site environments where camera surveillance is prone to misidentification caused by poor lighting conditions or partial occlusion by other objects."
+        },
+        {
+          "title": "Multimodal Image Captioning with BLIP",
+          "period": "10.2024 – 01.2025",
+          "description": "Fine-tuned BLIP on COCO 2017 to explore vision-language alignment and decoder-side optimization. Evaluated quality using BLEU metrics.",
+          "stack": [
+            "Transformers",
+            "Torch",
+            "Pillow",
+            "Matplotlib"
+          ],
+          "outcome": "Functional prototype for contextual caption generation.",
+          "href": "https://surl.li/klaufh"
+        },
+        {
+          "title": "Real-Time Hand Gesture Recognition",
+          "period": "02.2025 – 05.2025",
+          "description": "Low-latency classifier using Mediapipe keypoints as structured features for ML training. Focused on reliable real-world performance.",
+          "stack": [
+            "TensorFlow",
+            "scikit-learn",
+            "Mediapipe",
+            "NumPy",
+            "Pandas"
+          ],
+          "outcome": "Achieved >99% accuracy for directional control interfaces.",
+          "href": "https://surl.lu/tmkpwj"
         }
       ]
     },
@@ -75,7 +148,7 @@
       "title": "Academic Background & Qualifications",
       "school": {
         "name": "Industrial University of Ho Chi Minh City (IUH)",
-        "degree": "Bachelor of Computer Science",
+        "degree": "Engineering Degree in Computer Science",
         "period": "2021 – 2025",
         "highlights": [
           "GPA: 3.18 / 4.00",
@@ -85,92 +158,40 @@
       "research": {
         "badge": "Published Research",
         "title": "Real-Time Detection of Construction Workers Without Safety Helmets Using the Enhanced YOLOv8s-AP Object Detection Model",
-        "status": "Accepted for publication — 2nd Student Scientific Research Conference (SSRC), Industrial University of Ho Chi Minh City.",
+        "href": "https://ssrc.fit.iuh.edu.vn/conf/article/view/213",
+        "status": "Accepted — 2nd Student Scientific Research Conference (SSRC), IUH 2025.",
+        "abstract": "This paper evaluates 9 state-of-the-art models on safety helmet detection. By integrating ASFF and PseudoDCN modules into YOLOv8s-AP, feature fusion and small-object detection were significantly improved. Results show a peak mAP@50 of 0.9778.",
         "highlights": [
-          "Evaluated 9 state-of-the-art object detection models in a unified experimental framework.",
-          "mAP@50: 0.9778  ·  Recall: 0.9515  ·  Graduation project score: 9.4 / 10 (A+)",
+          "mAP@50: 0.9778 · Recall: 0.9515",
+          "Graduation score: 9.4 / 10 (A+)",
           "Presented at the 2nd SSRC Conference — IUH, 2025."
-        ]
+        ],
+        "awardCaption": "Honorable Mention Award — 2nd Student Scientific Research Conference (SSRC), IUH 2025."
       }
     },
-    "projects": {
-      "badge": "Projects",
-      "title": "Selected work spanning computer vision, multimodal AI, and real-time systems.",
-      "projectLinkLabel": "Project Link",
-      "cards": [
+    "experience": {
+      "badge": "Work Experience",
+      "title": "Professional experience in AI data operations.",
+      "entries": [
         {
-          "title": "Real-Time Safety Helmet Detection System",
-          "period": "09.2025 – Present",
-          "description": "Built a full-stack AI production system for real-time PPE compliance monitoring. Converted YOLOv8 weights to ONNX runtime, reducing Docker image size from ~5 GB to ~1.8 GB. Integrated ByteTrack for multi-object person tracking across video streams. Deployed as a single Docker container with a React + Vite frontend and FastAPI backend on Hugging Face Spaces.",
-          "stack": ["YOLOv8", "ONNX Runtime", "FastAPI", "React", "Vite", "Docker", "ByteTrack", "Python"],
-          "outcome": "mAP@50: 0.9778 · Recall: 0.9515 · Graduation score: 9.4/10 (A+). Peer-reviewed publication accepted at the 2nd SSRC Conference, IUH 2025.",
-          "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
-          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection"
-        },
-        {
-          "title": "Multimodal Image Captioning with BLIP",
-          "period": "10.2024 – 01.2025",
-          "description": "Fine-tuned a BLIP-based captioning model on the COCO 2017 dataset, focusing on decoder-side optimization and clean experimental tracking. Explored multimodal model behavior, evaluated output quality against BLEU metrics, and iterated on training configurations.",
-          "stack": ["Transformers", "Torch", "Pillow", "Matplotlib"],
-          "outcome": "Delivered a functional prototype capable of generating contextual captions from image inputs, deepening understanding of vision-language model integration.",
-          "href": "https://surl.li/klaufh"
-        },
-        {
-          "title": "Real-Time Hand Gesture Recognition",
-          "period": "02.2025 – 05.2025",
-          "description": "Engineered a low-latency webcam gesture classifier, leveraging Mediapipe keypoints as structured features for ML training. Focused on fast inference and reliable real-world performance.",
-          "stack": ["TensorFlow", "scikit-learn", "Mediapipe", "NumPy", "Pandas"],
-          "outcome": "Secured >99% accuracy on the trained dataset, enabling reliable directional control interfaces.",
-          "href": "https://surl.lu/tmkpwj"
-        }
-      ]
-    },
-    "skills": {
-      "badge": "Skills",
-      "title": "Core technical stack and competencies.",
-      "groups": [
-        {
-          "title": "LLMs, Agents & Prompt Engineering",
-          "items": [
-            "Prompt Engineering: Few-shot prompting, chain-of-thought, structured outputs, and system prompt design for reliable, controllable LLM behavior.",
-            "Agentic AI: Tool orchestration, multi-step reasoning chains, and conversational memory using LangChain. Familiar with CrewAI and AutoGen concepts.",
-            "LLM Integration: OpenAI and Claude API integration; building RAG pipelines with vector stores (ChromaDB); output evaluation including latency, accuracy, and cost monitoring.",
-            "LLMOps Thinking: Iterating from PoC to production-ready features; monitoring model behavior; structuring experiments for reproducibility."
-          ]
-        },
-        {
-          "title": "Computer Vision & Deep Learning",
-          "items": [
-            "Object Detection: Proficient with YOLO architectures (v5–v8), RT-DETR, and Faster R-CNN; architecture modification and benchmarking.",
-            "Image Processing: Classification, segmentation, data augmentation, and preprocessing via OpenCV and Albumentations.",
-            "Evaluation: Strong grasp of mAP, Accuracy, Precision, Recall, F1-score, and RMSE; experienced in designing fair, controlled experimental frameworks."
-          ]
-        },
-        {
-          "title": "ML Engineering & Data",
-          "items": [
-            "Frameworks: Python (primary), PyTorch, TensorFlow, Keras, scikit-learn.",
-            "Data Science: Pandas, NumPy, Matplotlib for feature engineering, EDA, and pipeline construction.",
-            "MLOps Concepts: Experiment tracking, dataset versioning, hyperparameter tuning (Ray Tune), model evaluation workflows, and reproducible training pipelines."
-          ]
-        },
-        {
-          "title": "Tooling & Workflow",
-          "items": [
-            "Prototyping & Deployment: Streamlit and Flask for rapid UI/API development; scripting and automation for workflow efficiency.",
-            "Adaptability: Excellent ability to digest technical documentation and adopt new tools rapidly — from reading research papers to shipping working prototypes.",
-            "Communication: Professional English proficiency (TOEIC 800/990); capable of participating in technical discussions, code reviews, and knowledge-sharing sessions."
+          "title": "Data Annotator",
+          "organization": "Alchera Vietnam",
+          "period": "08.2025 – 10.2025",
+          "summary": "Supported critical data preparation for Computer Vision projects, gaining a deep understanding of how high-quality data impacts production AI.",
+          "highlights": [
+            "Executed precise annotations using bounding boxes, polygons, and classification schemas.",
+            "Ensured strict consistency and compliance with rigorous project quality standards.",
+            "Observed how raw data variations affect downstream system performance to inform better data pipeline design."
           ]
         }
       ]
     },
-    "footer": "Thank you for taking the time to review my portfolio.",
+    "footer": "Thank you for visiting my 'digital workspace' – a place where I showcase the knowledge and skills gathered throughout my self-development journey. This space is constantly evolving and will be updated as I grow. Please don't hesitate to reach out if you'd like to connect or discuss further! ☕🚀",
     "chatbot": {
-      "greeting": "Hi! I'm Khoi's AI assistant. Ask me anything about his background, projects, skills, or how to reach him.",
+      "greeting": "Hi! I'm Khoi's AI assistant. Ask me about his research, projects, or how to contact him.",
       "suggestions": [
-        "What projects has Khoi built?",
+        "Tell me about his YOLOv8 research.",
         "What are his AI skills?",
-        "Tell me about his research paper.",
         "How can I contact Khoi?"
       ]
     }
@@ -179,70 +200,143 @@
     "languageLabel": "VI",
     "switchLabel": "Switch to English",
     "nav": [
-      { "label": "Giới thiệu", "href": "#about" },
-      { "label": "Kỹ năng", "href": "#skills" },
-      { "label": "Dự án", "href": "#projects" },
-      { "label": "Học vấn", "href": "#education" },
-      { "label": "Kinh nghiệm", "href": "#experience" }
+      {
+        "label": "Giới thiệu",
+        "href": "#about"
+      },
+      {
+        "label": "Kỹ năng",
+        "href": "#skills"
+      },
+      {
+        "label": "Dự án",
+        "href": "#projects"
+      },
+      {
+        "label": "Học vấn",
+        "href": "#education"
+      },
+      {
+        "label": "Kinh nghiệm",
+        "href": "#experience"
+      }
     ],
     "contactDropdown": {
       "buttonLabel": "Liên hệ",
       "items": [
-        { "icon": "phone", "label": "Điện thoại / Zalo", "value": "0343350117", "href": "tel:0343350117" },
-        { "icon": "email", "label": "Gmail", "value": "tranthekhoi2003@gmail.com", "href": "mailto:tranthekhoi2003@gmail.com" },
-        { "icon": "linkedin", "label": "LinkedIn", "value": "Tran The Khoi", "href": "https://www.linkedin.com/in/khoithetran" }
+        {
+          "icon": "phone",
+          "label": "Điện thoại / Zalo",
+          "value": "0343350117",
+          "href": "tel:0343350117"
+        },
+        {
+          "icon": "email",
+          "label": "Gmail",
+          "value": "tranthekhoi2003@gmail.com",
+          "href": "mailto:tranthekhoi2003@gmail.com"
+        },
+        {
+          "icon": "linkedin",
+          "label": "LinkedIn",
+          "value": "Tran The Khoi",
+          "href": "https://www.linkedin.com/in/khoithetran"
+        }
       ]
     },
     "about": {
       "badge": "Giới thiệu",
       "title": "Giới thiệu bản thân – Mục tiêu nghề nghiệp",
       "paragraphs": [
-        "Tốt nghiệp chuyên ngành Khoa học Máy tính tại Đại học Công nghiệp TP.HCM, tôi tiếp cận AI theo hướng end-to-end và hướng sản phẩm. Tôi kết hợp nền tảng nghiên cứu vững chắc — bao gồm bài báo khoa học được công bố — với kinh nghiệm thực tiễn trong việc triển khai tính năng AI từ prototype đến môi trường sản xuất. Điểm mạnh lớn nhất của tôi là học nhanh, tư duy phản biện, và tinh thần chịu trách nhiệm trên toàn bộ AI stack.",
-        "Ngoài việc huấn luyện mô hình, tôi tập trung vào toàn bộ vòng đời sản phẩm: thiết kế agentic workflows, tích hợp LLM APIs, xây dựng data pipeline đáng tin cậy, đánh giá hiệu năng hệ thống (accuracy, latency, cost), và đảm bảo giải pháp AI có thể vận hành trong thực tế.",
-        "Tôi đang tích cực xây dựng kinh nghiệm thực hành với LangChain, Retrieval-Augmented Generation (RAG), và agentic tool orchestration — bổ trợ cho nền tảng sâu về Computer Vision và deep learning. Khi dự án đòi hỏi kỹ năng mới, tôi thích nghi nhanh, tham khảo nghiên cứu mới nhất, và ship."
+        "Tôi tốt nghiệp Kỹ sư Khoa học Máy tính từ IUH, hiện đang tập trung phát triển sự nghiệp chuyên sâu trong vai trò AI/ML Engineer. Với nền tảng vững chắc về Computer Vision và Deep Learning, mục tiêu ngắn hạn của tôi (trong 2-3 năm tới) là tham gia vào các dự án thực tế để tối ưu hóa các kiến trúc mô hình (như YOLO, RT-DETR) và triển khai chúng hiệu quả trên môi trường production. Đồng thời, tôi đang đầu tư mạnh mẽ vào việc nghiên cứu LLMs Engineer, cụ thể là xây dựng các hệ thống RAG và tối ưu hóa Prompt Engineering để tạo ra các giải pháp ngôn ngữ có độ chính xác cao.",
+        "Trong dài hạn, tôi hướng tới trở thành một Chuyên gia về AI có khả năng thiết kế và dẫn dắt các hệ thống trí tuệ nhân tạo đa phương thức (Multimodal) phức tạp. Tôi không chỉ dừng lại ở việc huấn luyện mô hình mà còn chú trọng vào tư duy hệ thống: từ việc xây dựng data pipeline sạch, quản lý vòng đời mô hình (MLOps) đến việc giải quyết các bài toán hóc búa về hiệu suất và chi phí triển khai. Tôi khao khát đóng góp vào những sản phẩm AI có tác động thực tiễn lớn, mang lại giá trị bền vững cho người dùng và doanh nghiệp."
       ]
     },
-    "research": {
-      "badge": "Khóa luận & Nghiên cứu",
-      "title": "Dự án phát hiện mũ bảo hộ với quy trình benchmark khắt khe và bài báo khoa học được công nhận.",
-      "overview": "Đề tài tốt nghiệp của tôi giải quyết bài toán phát hiện công nhân không đội mũ bảo hộ theo thời gian thực. Quá trình này đòi hỏi tổng hợp dữ liệu, chuyển đổi nhãn, tinh chỉnh kiến trúc mô hình và đánh giá đối chiếu với các giải pháp hàng đầu — một chu trình R&D hoàn chỉnh từ dữ liệu đến công bố.",
-      "focusAreas": [
-        "Đề xuất kiến trúc YOLOv8s-AP kết hợp ASFF và Pseudo-DCN nhằm cải thiện khả năng trích xuất đặc trưng và nhận diện vật thể nhỏ.",
-        "Thiết lập môi trường đánh giá công bằng, so sánh chéo giữa các biến thể YOLO, RT-DETR và Faster R-CNN.",
-        "Cân bằng xuất sắc giữa độ chính xác của mô hình và tốc độ xử lý để đáp ứng yêu cầu giám sát an toàn trong thực tế."
-      ],
-      "metrics": [
-        { "value": "SSRC", "label": "Báo cáo tại Hội nghị NCKH Sinh viên lần 2 (IUH)" },
-        { "value": "9.4/10", "label": "Điểm đánh giá đồ án tốt nghiệp (Tương đương A+)" },
-        { "value": "0.9515", "label": "Chỉ số Recall công bố trong nghiên cứu" }
-      ],
-      "publication": {
-        "badge": "Bài báo khoa học",
-        "title": "Real-Time Detection of Construction Workers Without Safety Helmets Using the Enhanced YOLOv8s-AP Object Detection Model",
-        "status": "Đã được chấp nhận đăng trong kỷ yếu/tạp chí thuộc khuôn khổ hội nghị SSRC lần 2 do trường Đại học Công nghiệp TP.HCM tổ chức.",
-        "summary": "Song song với đồ án tốt nghiệp, tôi và nhóm đã hệ thống hóa quá trình thực nghiệm và những cải tiến trên YOLOv8s-AP thành một bài báo khoa học hoàn chỉnh.",
-        "highlights": [
-          "Thực hiện đối chiếu 9 mô hình nhận diện tiên tiến nhất trong cùng một điều kiện thực nghiệm.",
-          "Sử dụng bộ dữ liệu Hard Hat Detection (5.000 ảnh) với tỷ lệ phân chia chuẩn mực: 80% Train, 10% Validation, 10% Test.",
-          "Ghi nhận kết quả vượt trội với mAP@50 đạt 0.9778 và Recall đạt 0.9515, đảm bảo tính khả thi cao cho các hệ thống giám sát thời gian thực."
-        ]
-      },
-      "note": "Sự kết hợp giữa đồ án thực tế và bài báo khoa học là minh chứng cho năng lực R&D của tôi: từ xử lý dữ liệu, lặp thực nghiệm, đo lường bằng số liệu đến truyền đạt kết quả chuyên môn — những kỹ năng tôi áp dụng trực tiếp vào phát triển sản phẩm AI."
-    },
-    "experience": {
-      "badge": "Kinh nghiệm làm việc",
-      "title": "Kinh nghiệm thực tiễn trong lĩnh vực xử lý dữ liệu AI.",
-      "entries": [
+    "skills": {
+      "badge": "Kỹ năng",
+      "title": "Những kỹ năng cốt lõi đã được học hoặc đang trong quá trình tự nghiên cứu.",
+      "groups": [
         {
-          "title": "Data Annotator",
-          "organization": "Alchera Vietnam",
-          "period": "08/2025 - 10/2025",
-          "summary": "Tham gia xử lý và chuẩn hóa dữ liệu cho các dự án AI về hình ảnh và video. Trải nghiệm này giúp tôi thấm nhuần tầm quan trọng của chất lượng dữ liệu — và trực tiếp định hình cách tôi thiết kế data pipeline trong các dự án của mình.",
-          "highlights": [
-            "Thực hiện gán nhãn chi tiết bằng bounding box, polygon và classification.",
-            "Duy trì sự nhất quán cao và tuân thủ chặt chẽ các tiêu chuẩn chất lượng khắt khe của dự án.",
-            "Thấu hiểu sâu sắc cách dữ liệu thô tác động đến độ chính xác của các hệ thống AI khi đưa vào vận hành thực tế."
+          "title": "Thị giác máy tính & Machine Learning",
+          "items": [
+            "Thao tác CV cốt lõi: Thành thạo Tiền xử lý ảnh, Trích xuất đặc trưng, Tăng cường dữ liệu (Albumentations) và Tối ưu hóa mô hình (ONNX, TensorRT).",
+            "Bài toán ML: Kinh nghiệm thực tế với Object Detection (YOLO v5-v11, RT-DETR), Classification, Semantic/Instance Segmentation và OCR.",
+            "Đánh giá: Nắm vững mAP, Precision-Recall, F1-score và đo lường Latency cho các framework thực nghiệm."
           ]
+        },
+        {
+          "title": "LLMs & Generative AI (Nghiên cứu tự học)",
+          "items": [
+            "Framework: Nghiên cứu xây dựng RAG pipeline với LangChain và Cơ sở dữ liệu Vector (ChromaDB).",
+            "Prompt Engineering: Thử nghiệm các chiến lược Few-shot, Chain-of-thought để kiểm soát hành vi mô hình.",
+            "Tích hợp: Đang tìm hiểu cách giám sát chi phí, độ trễ và độ chính xác của các ứng dụng tích hợp LLM."
+          ]
+        },
+        {
+          "title": "Kỹ thuật & Công cụ",
+          "items": [
+            "Framework: Python (Chính), PyTorch, TensorFlow, scikit-learn, OpenCV.",
+            "MLOps: Quản lý thực nghiệm, tinh chỉnh siêu tham số (Ray Tune) và xây dựng pipeline huấn luyện có tính tái lập."
+          ]
+        },
+        {
+          "title": "Kỹ năng mềm",
+          "items": [
+            "Giao tiếp & Tài liệu: Giao tiếp hiệu quả trong công việc và có khả năng đọc hiểu chuyên sâu các tài liệu kỹ thuật/bài báo khoa học tiếng Anh (TOEIC 800).",
+            "Quản lý công việc: Quản lý thời gian và deadline hiệu quả, có khả năng làm việc dưới áp lực cao trong các dự án thực tế."
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "badge": "Dự án",
+      "title": "Các dự án tiêu biểu vẫn đang được phát triển cho đến thời điểm hiện tại.",
+      "projectLinkLabel": "Xem dự án",
+      "cards": [
+        {
+          "title": "Hệ thống Phát hiện Mũ bảo hộ Thời gian thực",
+          "period": "09.2025 – Hiện tại",
+          "description": "Triển khai thực tế nghiên cứu SSRC. Tối ưu YOLOv8 với ONNX Runtime và ByteTrack để theo dõi đa đối tượng. Triển khai qua FastAPI/React trên Hugging Face Spaces.",
+          "stack": [
+            "YOLOv8",
+            "ONNX Runtime",
+            "FastAPI",
+            "React",
+            "Docker",
+            "ByteTrack",
+            "Python"
+          ],
+          "outcome": "mAP@50: 0.9778. Bài báo khoa học được chấp nhận và điểm tốt nghiệp A+.",
+          "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
+          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection",
+          "demoCaption": "Kết quả nhận diện bằng mô hình YOLOv8s-AP cho thấy độ chính xác cao với những chi tiết nhỏ — phù hợp với môi trường công trường, nơi camera giám sát dễ nhận diện sai do điều kiện ánh sáng kém hoặc các vật thể che khuất."
+        },
+        {
+          "title": "Image Captioning đa phương thức với BLIP",
+          "period": "10.2024 – 01.2025",
+          "description": "Fine-tune BLIP trên tập COCO 2017 để khám phá sự căn chỉnh vision-language và tối ưu hóa decoder.",
+          "stack": [
+            "Transformers",
+            "Torch",
+            "Pillow",
+            "Matplotlib"
+          ],
+          "outcome": "Nguyên mẫu có khả năng sinh mô tả ngữ cảnh tự động từ hình ảnh.",
+          "href": "https://surl.li/klaufh"
+        },
+        {
+          "title": "Nhận diện Cử chỉ tay theo Thời gian thực",
+          "period": "02.2025 – 05.2025",
+          "description": "Bộ phân loại cử chỉ độ trễ thấp sử dụng Mediapipe keypoints làm dữ liệu huấn luyện ML.",
+          "stack": [
+            "TensorFlow",
+            "scikit-learn",
+            "Mediapipe",
+            "NumPy",
+            "Pandas"
+          ],
+          "outcome": "Đạt độ chính xác trên 99% cho các bài toán điều hướng cử chỉ.",
+          "href": "https://surl.lu/tmkpwj"
         }
       ]
     },
@@ -251,7 +345,7 @@
       "title": "Nền tảng học thuật & Bằng cấp",
       "school": {
         "name": "Đại học Công nghiệp TP.HCM (IUH)",
-        "degree": "Cử nhân Khoa học Máy tính",
+        "degree": "Engineering Degree in Computer Science",
         "period": "2021 – 2025",
         "highlights": [
           "GPA: 3.18 / 4.00",
@@ -261,93 +355,41 @@
       "research": {
         "badge": "Bài báo khoa học",
         "title": "Real-Time Detection of Construction Workers Without Safety Helmets Using the Enhanced YOLOv8s-AP Object Detection Model",
-        "status": "Được chấp nhận đăng — Hội nghị NCKH Sinh viên lần 2 (SSRC), Đại học Công nghiệp TP.HCM.",
+        "href": "https://ssrc.fit.iuh.edu.vn/conf/article/view/213",
+        "status": "Được chấp nhận đăng — Hội nghị NCKH Sinh viên lần 2 (SSRC), IUH 2025.",
+        "abstract": "Nghiên cứu đánh giá hiệu năng của 9 mô hình trên bài toán phát hiện mũ bảo hộ. YOLOv8s-AP tích hợp ASFF và PseudoDCN giúp cải thiện hợp nhất đặc trưng và phát hiện vật thể nhỏ. Kết quả đạt mAP@50 0.9778.",
         "highlights": [
-          "Đánh giá 9 mô hình nhận diện đối tượng tiên tiến trong cùng một điều kiện thực nghiệm.",
-          "mAP@50: 0.9778  ·  Recall: 0.9515  ·  Điểm đồ án tốt nghiệp: 9.4 / 10 (A+)",
+          "mAP@50: 0.9778 · Recall: 0.9515",
+          "Điểm đồ án tốt nghiệp: 9.4 / 10 (A+)",
           "Báo cáo tại Hội nghị NCKH Sinh viên lần 2 — IUH, 2025."
-        ]
+        ],
+        "awardCaption": "Giải Tiềm năng — Hội nghị Nghiên cứu Khoa học Sinh viên lần 2 (SSRC), IUH 2025."
       }
     },
-    "projects": {
-      "badge": "Dự án",
-      "title": "Các dự án tiêu biểu về Computer Vision, AI đa phương thức và hệ thống thời gian thực.",
-      "projectLinkLabel": "Xem dự án",
-      "cards": [
+    "experience": {
+      "badge": "Kinh nghiệm làm việc",
+      "title": "Kinh nghiệm thực tiễn trong lĩnh vực xử lý dữ liệu AI.",
+      "entries": [
         {
-          "title": "Hệ thống Phát hiện Mũ bảo hộ Thời gian thực",
-          "period": "09.2025 – Present",
-          "description": "Xây dựng hệ thống AI full-stack giám sát tuân thủ an toàn PPE theo thời gian thực. Chuyển đổi trọng số YOLOv8 sang ONNX runtime, giảm kích thước Docker image từ ~5 GB xuống ~1.8 GB. Tích hợp ByteTrack để theo dõi đa người trong luồng video. Triển khai một Docker container duy nhất với frontend React + Vite và backend FastAPI trên Hugging Face Spaces.",
-          "stack": ["YOLOv8", "ONNX Runtime", "FastAPI", "React", "Vite", "Docker", "ByteTrack", "Python"],
-          "outcome": "mAP@50: 0.9778 · Recall: 0.9515 · Điểm tốt nghiệp: 9.4/10 (A+). Bài báo khoa học được chấp nhận tại Hội nghị SSRC lần 2, IUH 2025.",
-          "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
-          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection"
-        },
-        {
-          "title": "Image Captioning đa phương thức với BLIP",
-          "period": "10.2024 – 01.2025",
-          "description": "Fine-tune mô hình BLIP trên tập COCO 2017, tối ưu hóa decoder và thiết lập luồng thực nghiệm rõ ràng. Khám phá hành vi mô hình đa phương thức và đánh giá chất lượng đầu ra qua chỉ số BLEU.",
-          "stack": ["Transformers", "Torch", "Pillow", "Matplotlib"],
-          "outcome": "Nguyên mẫu multimodal hoạt động có khả năng tự động sinh mô tả từ hình ảnh, củng cố hiểu biết về tích hợp vision-language model.",
-          "href": "https://surl.li/klaufh"
-        },
-        {
-          "title": "Nhận diện Cử chỉ tay theo Thời gian thực",
-          "period": "02.2025 – 05.2025",
-          "description": "Phát triển bộ phân loại cử chỉ qua webcam với độ trễ thấp, ứng dụng Mediapipe để trích xuất keypoints làm dữ liệu đầu vào có cấu trúc cho ML training.",
-          "stack": ["TensorFlow", "scikit-learn", "Mediapipe", "NumPy", "Pandas"],
-          "outcome": "Đạt độ chính xác ấn tượng trên 99% cho các bài toán điều hướng bằng cử chỉ.",
-          "href": "https://surl.lu/tmkpwj"
-        }
-      ]
-    },
-    "skills": {
-      "badge": "Kỹ năng",
-      "title": "Bộ công cụ và năng lực cốt lõi được đúc kết qua quá trình làm việc.",
-      "groups": [
-        {
-          "title": "LLMs, Agents & Prompt Engineering",
-          "items": [
-            "Prompt Engineering: Few-shot prompting, chain-of-thought, structured outputs và thiết kế system prompt cho hành vi LLM đáng tin cậy.",
-            "Agentic AI: Điều phối công cụ (tool orchestration), chuỗi lý luận đa bước, và conversational memory sử dụng LangChain. Quen thuộc với khái niệm CrewAI và AutoGen.",
-            "LLM Integration: Tích hợp OpenAI và Claude API; xây dựng RAG pipeline với vector store (ChromaDB); đánh giá đầu ra theo latency, accuracy và cost.",
-            "LLMOps Thinking: Lặp từ PoC đến tính năng production; giám sát hành vi mô hình; cấu trúc thực nghiệm cho tính tái lập."
-          ]
-        },
-        {
-          "title": "Computer Vision & Deep Learning",
-          "items": [
-            "Object Detection: Thành thạo kiến trúc YOLO (v5–v8), RT-DETR và Faster R-CNN; sửa đổi kiến trúc và benchmarking.",
-            "Xử lý ảnh: Classification, segmentation, data augmentation và tiền xử lý với OpenCV và Albumentations.",
-            "Đánh giá mô hình: Nắm vững mAP, Accuracy, Precision, Recall, F1-score, RMSE; kinh nghiệm thiết kế framework thực nghiệm công bằng, có kiểm soát."
-          ]
-        },
-        {
-          "title": "ML Engineering & Dữ liệu",
-          "items": [
-            "Ngôn ngữ & Framework: Python (chính), PyTorch, TensorFlow, Keras, scikit-learn.",
-            "Phân tích dữ liệu: Pandas, NumPy, Matplotlib cho feature engineering, EDA và xây dựng pipeline.",
-            "MLOps Concepts: Experiment tracking, dataset versioning, hyperparameter tuning (Ray Tune), quy trình đánh giá mô hình và training pipeline có thể tái lập."
-          ]
-        },
-        {
-          "title": "Công cụ & Workflow",
-          "items": [
-            "Prototyping & Triển khai: Streamlit và Flask cho UI/API phát triển nhanh; scripting và tự động hóa nâng cao hiệu quả workflow.",
-            "Khả năng thích nghi: Đọc hiểu tài liệu kỹ thuật và áp dụng công cụ mới nhanh chóng — từ nghiên cứu đến prototype hoạt động.",
-            "Giao tiếp: Tiếng Anh chuyên ngành thành thạo (TOEIC 800/990); sẵn sàng tham gia thảo luận kỹ thuật, code review và chia sẻ kiến thức."
+          "title": "Data Annotator",
+          "organization": "Alchera Vietnam",
+          "period": "08.2025 – 10.2025",
+          "summary": "Tham gia chuẩn hóa dữ liệu cho các dự án Vision, thấu hiểu tầm quan trọng của chất lượng dữ liệu đối với hiệu năng mô hình.",
+          "highlights": [
+            "Gán nhãn chi tiết bằng bounding box, polygon cho các tập dữ liệu phức tạp.",
+            "Đảm bảo sự nhất quán và tuân thủ các tiêu chuẩn chất lượng khắt khe.",
+            "Thấu hiểu cách nhiễu dữ liệu tác động đến hệ thống thực tế để tối ưu hóa data pipeline."
           ]
         }
       ]
     },
-    "footer": "Chân thành cảm ơn bạn đã dành thời gian xem qua hồ sơ của tôi.",
+    "footer": "Cảm ơn bạn đã ghé thăm 'căn phòng làm việc' của tôi – nơi tôi trình bày những kiến thức và kỹ năng đã đúc kết được trong hành trình phát triển bản thân. Trạng thái của căn phòng này sẽ luôn được cập nhật liên tục cùng với sự trưởng thành của tôi. Đừng ngần ngại liên hệ để chúng ta có thể trao đổi thêm nhiều thông tin thú vị nhé! ☕🚀",
     "chatbot": {
-      "greeting": "Xin chào! Tôi là trợ lý AI của Khoi. Hãy hỏi tôi về dự án, kỹ năng hoặc cách liên hệ anh ấy.",
+      "greeting": "Xin chào! Tôi là trợ lý AI của Khôi. Hãy hỏi tôi về nghiên cứu YOLOv8, kỹ năng hoặc cách liên hệ anh ấy.",
       "suggestions": [
-        "Khoi đã xây dựng những dự án gì?",
+        "Dự án YOLOv8 của Khôi có gì đặc biệt?",
         "Kỹ năng AI của anh ấy là gì?",
-        "Hãy kể về luận văn nghiên cứu.",
-        "Làm thế nào để liên hệ Khoi?"
+        "Làm thế nào để liên hệ Khôi?"
       ]
     }
   }
