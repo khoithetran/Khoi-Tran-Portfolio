@@ -97,29 +97,32 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid messages" }, { status: 400 });
     }
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY!,
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify({
-        model: "claude-haiku-4-5-20251001",
-        max_tokens: 512,
-        system: SYSTEM_PROMPT,
-        messages,
-      }),
-    });
+    const geminiMessages = messages.map((m: { role: string; content: string }) => ({
+      role: m.role === "assistant" ? "model" : "user",
+      parts: [{ text: m.content }],
+    }));
+
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GOOGLE_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+          contents: geminiMessages,
+          generationConfig: { maxOutputTokens: 512 },
+        }),
+      }
+    );
 
     if (!response.ok) {
       const error = await response.text();
-      console.error("Anthropic API error:", error);
+      console.error("Google API error:", error);
       return NextResponse.json({ error: "API error" }, { status: 500 });
     }
 
     const data = await response.json();
-    const text = data.content?.[0]?.text ?? "";
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
     return NextResponse.json({ text });
   } catch (err) {
     console.error("Chat route error:", err);

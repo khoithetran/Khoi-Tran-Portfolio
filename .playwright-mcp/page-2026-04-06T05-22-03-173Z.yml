@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "Tran The Khoi graduation portrait" [ref=e9]
+        - generic [ref=e10]:
+          - paragraph [ref=e11]: Trần Thế Khôi
+          - paragraph [ref=e12]: Kỹ sư Trí tuệ Nhân tạo/Máy học
+      - navigation [ref=e13]:
+        - link "Giới thiệu" [ref=e14] [cursor=pointer]:
+          - /url: "#about"
+        - link "Kỹ năng" [ref=e15] [cursor=pointer]:
+          - /url: "#skills"
+        - link "Dự án" [ref=e16] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Học vấn" [ref=e17] [cursor=pointer]:
+          - /url: "#education"
+        - link "Kinh nghiệm" [ref=e18] [cursor=pointer]:
+          - /url: "#experience"
+      - generic [ref=e19]:
+        - button "Liên hệ" [ref=e21]
+        - generic "Language switcher" [ref=e22]:
+          - button "Switch to English" [pressed] [ref=e23]:
+            - img "Tiếng Việt" [ref=e24]
+          - button "Chuyển sang tiếng Việt" [ref=e25]:
+            - img "English" [ref=e26]
+    - generic [ref=e27]:
+      - generic [ref=e29]:
+        - heading "Giới thiệu bản thân – Mục tiêu nghề nghiệp" [level=2] [ref=e31]
+        - generic [ref=e34]:
+          - paragraph [ref=e35]: Tôi tốt nghiệp Kỹ sư Khoa học Máy tính từ IUH, hiện đang tập trung phát triển sự nghiệp chuyên sâu trong vai trò AI/ML Engineer. Với nền tảng vững chắc về Computer Vision và Deep Learning, mục tiêu ngắn hạn của tôi (trong 2-3 năm tới) là tham gia vào các dự án thực tế để tối ưu hóa các kiến trúc mô hình (như YOLO, RT-DETR) và triển khai chúng hiệu quả trên môi trường production. Đồng thời, tôi đang đầu tư mạnh mẽ vào việc nghiên cứu LLMs Engineer, cụ thể là xây dựng các hệ thống RAG và tối ưu hóa Prompt Engineering để tạo ra các giải pháp ngôn ngữ có độ chính xác cao.
+          - paragraph [ref=e36]: "Trong dài hạn, tôi hướng tới trở thành một Chuyên gia về AI có khả năng thiết kế và dẫn dắt các hệ thống trí tuệ nhân tạo đa phương thức (Multimodal) phức tạp. Tôi không chỉ dừng lại ở việc huấn luyện mô hình mà còn chú trọng vào tư duy hệ thống: từ việc xây dựng data pipeline sạch, quản lý vòng đời mô hình (MLOps) đến việc giải quyết các bài toán hóc búa về hiệu suất và chi phí triển khai. Tôi khao khát đóng góp vào những sản phẩm AI có tác động thực tiễn lớn, mang lại giá trị bền vững cho người dùng và doanh nghiệp."
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - heading "Kỹ năng" [level=2] [ref=e40]
+          - paragraph [ref=e41]: Những kỹ năng cốt lõi đã được học hoặc đang trong quá trình tự nghiên cứu.
+        - generic [ref=e43]:
+          - article [ref=e44]:
+            - heading "Thị giác máy tính & Machine Learning" [level=3] [ref=e45]
+            - list [ref=e46]:
+              - listitem [ref=e47]: "Thao tác CV cốt lõi: Thành thạo Tiền xử lý ảnh, Trích xuất đặc trưng, Tăng cường dữ liệu (Albumentations) và Tối ưu hóa mô hình (ONNX, TensorRT)."
+              - listitem [ref=e48]: "Bài toán ML: Kinh nghiệm thực tế với Object Detection (YOLO v5-v11, RT-DETR), Classification, Semantic/Instance Segmentation và OCR."
+              - listitem [ref=e49]: "Đánh giá: Nắm vững mAP, Precision-Recall, F1-score và đo lường Latency cho các framework thực nghiệm."
+          - article [ref=e50]:
+            - heading "LLMs & Generative AI (Nghiên cứu tự học)" [level=3] [ref=e51]
+            - list [ref=e52]:
+              - listitem [ref=e53]: "Framework: Nghiên cứu xây dựng RAG pipeline với LangChain và Cơ sở dữ liệu Vector (ChromaDB)."
+              - listitem [ref=e54]: "Prompt Engineering: Thử nghiệm các chiến lược Few-shot, Chain-of-thought để kiểm soát hành vi mô hình."
+              - listitem [ref=e55]: "Tích hợp: Đang tìm hiểu cách giám sát chi phí, độ trễ và độ chính xác của các ứng dụng tích hợp LLM."
+          - article [ref=e56]:
+            - heading "Kỹ thuật & Công cụ" [level=3] [ref=e57]
+            - list [ref=e58]:
+              - listitem [ref=e59]: "Framework: Python (Chính), PyTorch, TensorFlow, scikit-learn, OpenCV."
+              - listitem [ref=e60]: "MLOps: Quản lý thực nghiệm, tinh chỉnh siêu tham số (Ray Tune) và xây dựng pipeline huấn luyện có tính tái lập."
+          - article [ref=e61]:
+            - heading "Kỹ năng mềm" [level=3] [ref=e62]
+            - list [ref=e63]:
+              - listitem [ref=e64]: "Giao tiếp & Tài liệu: Giao tiếp hiệu quả trong công việc và có khả năng đọc hiểu chuyên sâu các tài liệu kỹ thuật/bài báo khoa học tiếng Anh (TOEIC 800)."
+              - listitem [ref=e65]: "Quản lý công việc: Quản lý thời gian và deadline hiệu quả, có khả năng làm việc dưới áp lực cao trong các dự án thực tế."
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - heading "Dự án" [level=2] [ref=e69]
+          - paragraph [ref=e70]: Các dự án tiêu biểu vẫn đang được phát triển cho đến thời điểm hiện tại.
+        - generic [ref=e72]:
+          - article [ref=e73]:
+            - generic [ref=e75]: 09.2025 – Hiện tại
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - heading "Hệ thống Phát hiện Mũ bảo hộ Thời gian thực" [level=3] [ref=e79]
+                - link "GitHub" [ref=e80] [cursor=pointer]:
+                  - /url: https://github.com/khoithetran/khoa-luan-tot-nghiep
+                - link "HuggingFace" [ref=e81] [cursor=pointer]:
+                  - /url: https://huggingface.co/spaces/letsgobae/safety-helmet-detection
+              - paragraph [ref=e82]: Triển khai thực tế nghiên cứu SSRC. Tối ưu YOLOv8 với ONNX Runtime và ByteTrack để theo dõi đa đối tượng. Triển khai qua FastAPI/React trên Hugging Face Spaces.
+              - generic [ref=e83]:
+                - generic [ref=e84]: YOLOv8
+                - generic [ref=e85]: ONNX Runtime
+                - generic [ref=e86]: FastAPI
+                - generic [ref=e87]: React
+                - generic [ref=e88]: Docker
+                - generic [ref=e89]: ByteTrack
+                - generic [ref=e90]: Python
+              - generic [ref=e91]:
+                - paragraph [ref=e92]: "mAP@50: 0.9778. Bài báo khoa học được chấp nhận và điểm tốt nghiệp A+."
+                - generic [ref=e93]:
+                  - img "Demo detection result 1" [ref=e95]
+                  - img "Demo detection result 2" [ref=e97]
+                - paragraph [ref=e98]: Kết quả nhận diện bằng mô hình YOLOv8s-AP cho thấy độ chính xác cao với những chi tiết nhỏ — phù hợp với môi trường công trường, nơi camera giám sát dễ nhận diện sai do điều kiện ánh sáng kém hoặc các vật thể che khuất.
+          - article [ref=e99]:
+            - generic [ref=e101]: 10.2024 – 01.2025
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - heading "Image Captioning đa phương thức với BLIP" [level=3] [ref=e105]
+                - link "GitHub" [ref=e106] [cursor=pointer]:
+                  - /url: https://surl.li/klaufh
+              - paragraph [ref=e107]: Fine-tune BLIP trên tập COCO 2017 để khám phá sự căn chỉnh vision-language và tối ưu hóa decoder.
+              - generic [ref=e108]:
+                - generic [ref=e109]: Transformers
+                - generic [ref=e110]: Torch
+                - generic [ref=e111]: Pillow
+                - generic [ref=e112]: Matplotlib
+              - paragraph [ref=e114]: Nguyên mẫu có khả năng sinh mô tả ngữ cảnh tự động từ hình ảnh.
+          - article [ref=e115]:
+            - generic [ref=e117]: 02.2025 – 05.2025
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - heading "Nhận diện Cử chỉ tay theo Thời gian thực" [level=3] [ref=e121]
+                - link "GitHub" [ref=e122] [cursor=pointer]:
+                  - /url: https://surl.lu/tmkpwj
+              - paragraph [ref=e123]: Bộ phân loại cử chỉ độ trễ thấp sử dụng Mediapipe keypoints làm dữ liệu huấn luyện ML.
+              - generic [ref=e124]:
+                - generic [ref=e125]: TensorFlow
+                - generic [ref=e126]: scikit-learn
+                - generic [ref=e127]: Mediapipe
+                - generic [ref=e128]: NumPy
+                - generic [ref=e129]: Pandas
+              - paragraph [ref=e131]: Đạt độ chính xác trên 99% cho các bài toán điều hướng cử chỉ.
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - heading "Học vấn" [level=2] [ref=e135]
+          - paragraph [ref=e136]: Nền tảng học thuật & Bằng cấp
+        - article [ref=e139]:
+          - generic [ref=e141]: 2021 – 2025
+          - generic [ref=e143]:
+            - heading "Đại học Công nghiệp TP.HCM (IUH)" [level=3] [ref=e144]
+            - paragraph [ref=e145]: Engineering Degree in Computer Science
+            - list [ref=e146]:
+              - listitem [ref=e147]: "GPA: 3.18 / 4.00"
+              - listitem [ref=e148]: "TOEIC: 800 / 990 — Tiếng Anh chuyên ngành thành thạo"
+            - generic [ref=e149]:
+              - heading "Bài báo khoa học" [level=3] [ref=e150]
+              - link "Real-Time Detection of Construction Workers Without Safety Helmets Using the Enhanced YOLOv8s-AP Object Detection Model" [ref=e151] [cursor=pointer]:
+                - /url: https://ssrc.fit.iuh.edu.vn/conf/article/view/213
+              - paragraph [ref=e152]: Được chấp nhận đăng — Hội nghị NCKH Sinh viên lần 2 (SSRC), IUH 2025.
+              - paragraph [ref=e153]: Nghiên cứu đánh giá hiệu năng của 9 mô hình trên bài toán phát hiện mũ bảo hộ. YOLOv8s-AP tích hợp ASFF và PseudoDCN giúp cải thiện hợp nhất đặc trưng và phát hiện vật thể nhỏ. Kết quả đạt mAP@50 0.9778.
+              - generic [ref=e154]:
+                - img "Giải Tiềm năng — Hội nghị Nghiên cứu Khoa học Sinh viên lần 2 (SSRC), IUH 2025." [ref=e156]
+                - paragraph [ref=e157]: Giải Tiềm năng — Hội nghị Nghiên cứu Khoa học Sinh viên lần 2 (SSRC), IUH 2025.
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - heading "Kinh nghiệm làm việc" [level=2] [ref=e161]
+          - paragraph [ref=e162]: Kinh nghiệm thực tiễn trong lĩnh vực xử lý dữ liệu AI.
+        - article [ref=e165]:
+          - generic [ref=e167]: 08.2025 – 10.2025
+          - generic [ref=e169]:
+            - heading "Alchera Vietnam" [level=3] [ref=e170]
+            - paragraph [ref=e171]: Data Annotator
+            - paragraph [ref=e172]: Tham gia chuẩn hóa dữ liệu cho các dự án Vision, thấu hiểu tầm quan trọng của chất lượng dữ liệu đối với hiệu năng mô hình.
+            - list [ref=e173]:
+              - listitem [ref=e174]: Gán nhãn chi tiết bằng bounding box, polygon cho các tập dữ liệu phức tạp.
+              - listitem [ref=e175]: Đảm bảo sự nhất quán và tuân thủ các tiêu chuẩn chất lượng khắt khe.
+              - listitem [ref=e176]: Thấu hiểu cách nhiễu dữ liệu tác động đến hệ thống thực tế để tối ưu hóa data pipeline.
+      - generic [ref=e177]: Cảm ơn bạn đã ghé thăm 'căn phòng làm việc' của tôi – nơi tôi trình bày những kiến thức và kỹ năng đã đúc kết được trong hành trình phát triển bản thân. Trạng thái của căn phòng này sẽ luôn được cập nhật liên tục cùng với sự trưởng thành của tôi. Đừng ngần ngại liên hệ để chúng ta có thể trao đổi thêm nhiều thông tin thú vị nhé! ☕🚀
+    - generic [ref=e178]:
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - img [ref=e195]
+            - generic [ref=e198]:
+              - paragraph [ref=e199]: Ask about Khoi
+              - paragraph [ref=e200]: AI-powered portfolio assistant
+          - button "Close chat" [ref=e201]:
+            - img [ref=e202]
+        - generic [ref=e205]:
+          - generic [ref=e207]: Xin chào! Tôi là trợ lý AI của Khôi. Hãy hỏi tôi về nghiên cứu YOLOv8, kỹ năng hoặc cách liên hệ anh ấy.
+          - generic [ref=e224]: Tell me about Khoi's YOLOv8 research
+          - generic [ref=e226]: Sorry, I couldn't get a response.
+        - generic [ref=e213]:
+          - textbox "Ask something…" [ref=e214]
+          - button "Send" [disabled] [ref=e215]:
+            - img [ref=e216]
+      - button "Close chat" [ref=e219]:
+        - img [ref=e180]
+  - button "Open Next.js Dev Tools" [ref=e187] [cursor=pointer]:
+    - img [ref=e188]
+  - alert [ref=e222]
