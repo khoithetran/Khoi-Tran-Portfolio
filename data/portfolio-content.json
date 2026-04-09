@@ -111,7 +111,7 @@
           ],
           "outcome": "mAP@50: 0.9778. Peer-reviewed publication and A+ academic evaluation.",
           "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
-          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection",
+          "hrefHuggingFace": "https://huggingface.co/spaces/tr-th-khoi/safety-helmet-detection",
           "demoCaption": "Detection results from the YOLOv8s-AP model demonstrate high accuracy on fine-grained details — well-suited to construction site environments where camera surveillance is prone to misidentification caused by poor lighting conditions or partial occlusion by other objects."
         },
         {
@@ -308,7 +308,7 @@
           ],
           "outcome": "mAP@50: 0.9778. Bài báo khoa học được chấp nhận và điểm tốt nghiệp A+.",
           "href": "https://github.com/khoithetran/khoa-luan-tot-nghiep",
-          "hrefHuggingFace": "https://huggingface.co/spaces/letsgobae/safety-helmet-detection",
+          "hrefHuggingFace": "https://huggingface.co/spaces/tr-th-khoi/safety-helmet-detection",
           "demoCaption": "Kết quả nhận diện bằng mô hình YOLOv8s-AP cho thấy độ chính xác cao với những chi tiết nhỏ — phù hợp với môi trường công trường, nơi camera giám sát dễ nhận diện sai do điều kiện ánh sáng kém hoặc các vật thể che khuất."
         },
         {
