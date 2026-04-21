@@ -25,10 +25,17 @@ export type SkillGroup = {
   items: string[];
 };
 
+export type ProjectSection = {
+  heading: string;
+  body?: string;
+  items?: string[];
+};
+
 export type ProjectCard = {
   title: string;
   period: string;
-  description: string;
+  description?: string;
+  sections?: ProjectSection[];
   stack: string[];
   outcome: string;
   href?: string;
