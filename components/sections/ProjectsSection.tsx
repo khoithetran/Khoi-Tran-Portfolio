@@ -71,19 +71,19 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                     <div className="space-y-4">
                       {card.sections.map((section) => (
                         <div key={section.heading}>
-                          <h4 className="mb-1.5 font-[var(--font-mono)] text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                          <h4 className="mb-1.5 text-lg font-semibold text-slate-950">
                             {section.heading}
                           </h4>
                           {section.body && (
-                            <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
+                            <p className="text-base leading-8 text-[var(--muted)] [text-align:justify]">
                               {section.body}
                             </p>
                           )}
                           {section.items && (
                             <ul className="space-y-1">
                               {section.items.map((item) => (
-                                <li key={item} className="flex gap-2 text-sm leading-7 text-[var(--muted)]">
-                                  <span aria-hidden="true" className="mt-[0.35rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                                <li key={item} className="flex items-start gap-2 text-base leading-8 text-[var(--muted)]">
+                                  <span aria-hidden="true" className="mt-[0.65em] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
                                   <span>{item}</span>
                                 </li>
                               ))}
@@ -93,7 +93,7 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                       ))}
                     </div>
                   ) : (
-                    <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
+                    <p className="text-base leading-8 text-[var(--muted)] [text-align:justify]">
                       {card.description}
                     </p>
                   )}
@@ -108,7 +108,7 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                     ))}
                   </div>
                   <div className="mt-4 rounded-[1.3rem] border border-[var(--line)] bg-white/75 px-4 py-4 space-y-3">
-                    <p className="text-sm leading-7 text-slate-700 [text-align:justify]">
+                    <p className="text-base leading-8 text-slate-700 [text-align:justify]">
                       {card.outcome}
                     </p>
                     {card.demoCaption && (
@@ -121,7 +121,7 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                             <Image src={demo2} alt="Demo detection result 2" fill className="object-cover object-top" />
                           </div>
                         </div>
-                        <p className="text-sm leading-7 text-slate-700 [text-align:justify]">
+                        <p className="text-base leading-8 text-slate-700 [text-align:justify]">
                           {card.demoCaption}
                         </p>
                       </>

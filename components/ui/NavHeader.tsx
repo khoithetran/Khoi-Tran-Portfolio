@@ -152,7 +152,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
         </div>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex flex-1 flex-wrap justify-center gap-[10px] text-sm text-slate-700">
+        <nav className="hidden md:flex flex-1 flex-wrap justify-center gap-[10px] text-base text-slate-700">
           {content.nav.map((item) => (
             <a
               key={item.href}
@@ -172,7 +172,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
             <button
               type="button"
               onClick={() => setContactOpen((v) => !v)}
-              className="contact-btn rounded-full bg-slate-950 px-3 py-2 text-sm font-medium !text-white transition duration-200"
+              className="contact-btn rounded-full bg-slate-950 px-3 py-2 text-base font-medium !text-white transition duration-200"
             >
               {content.contactDropdown.buttonLabel}
             </button>
@@ -274,7 +274,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
       {/* Mobile dropdown */}
       {menuOpen && (
         <div className="absolute left-0 right-0 top-[calc(100%+8px)] z-40 md:hidden glass-card rounded-[1.5rem] px-4 py-3">
-          <nav className="flex flex-col gap-1 text-sm text-slate-700">
+          <nav className="flex flex-col gap-1 text-base text-slate-700">
             {content.nav.map((item) => (
               <a
                 key={item.href}

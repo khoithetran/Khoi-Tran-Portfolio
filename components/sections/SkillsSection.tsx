@@ -31,7 +31,7 @@ export function SkillsSection({ content }: SkillsSectionProps) {
               className="rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] md:grid md:grid-cols-[minmax(0,0.32fr)_minmax(0,1fr)] md:gap-6"
             >
               <h3 className="text-lg font-semibold text-slate-950">{group.title}</h3>
-              <ul className="mt-4 space-y-3 text-sm leading-7 text-[var(--muted)] [text-align:justify] md:mt-0">
+              <ul className="mt-4 space-y-3 text-base leading-8 text-[var(--muted)] [text-align:justify] md:mt-0">
                 {group.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}

@@ -42,7 +42,7 @@ export function EducationSection({ content }: EducationSectionProps) {
               <p className="mt-1 font-[var(--font-mono)] text-xs uppercase tracking-[0.3em] text-[var(--muted)]">
                 {edu.school.degree}
               </p>
-              <ul className="mt-4 space-y-3 text-sm leading-7 text-[var(--muted)]">
+              <ul className="mt-4 space-y-3 text-base leading-8 text-[var(--muted)]">
                 {edu.school.highlights.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
@@ -59,10 +59,10 @@ export function EducationSection({ content }: EducationSectionProps) {
                 >
                   {edu.research.title}
                 </a>
-                <p className="rounded-[1.2rem] border border-[var(--line)] bg-[var(--accent-soft)] px-4 py-3 text-sm leading-7 text-slate-800">
+                <p className="rounded-[1.2rem] border border-[var(--line)] bg-[var(--accent-soft)] px-4 py-3 text-base leading-8 text-slate-800">
                   {edu.research.status}
                 </p>
-                <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
+                <p className="text-base leading-8 text-[var(--muted)] [text-align:justify]">
                   {edu.research.abstract}
                 </p>
 
@@ -77,7 +77,7 @@ export function EducationSection({ content }: EducationSectionProps) {
                       className="h-auto w-full object-cover"
                     />
                   </div>
-                  <p className="text-sm leading-7 text-slate-600 italic">
+                  <p className="text-base leading-8 text-slate-600 italic">
                     {edu.research.awardCaption}
                   </p>
                 </div>

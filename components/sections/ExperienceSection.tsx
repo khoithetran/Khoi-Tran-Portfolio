@@ -42,14 +42,14 @@ export function ExperienceSection({ content }: ExperienceSectionProps) {
                 <p className="mt-1 font-[var(--font-mono)] text-xs uppercase tracking-[0.3em] text-[var(--muted)]">
                   {entry.title}
                 </p>
-                <p className="mt-3 text-sm leading-7 text-[var(--muted)] [text-align:justify]">
+                <p className="mt-3 text-base leading-8 text-[var(--muted)] [text-align:justify]">
                   {entry.summary}
                 </p>
                 <ul className="mt-3 space-y-3">
                   {entry.highlights.map((highlight) => (
                     <li
                       key={highlight}
-                      className="rounded-[1.3rem] border border-[var(--line)] bg-slate-50 px-4 py-3 text-sm leading-7 text-slate-700 [text-align:justify]"
+                      className="rounded-[1.3rem] border border-[var(--line)] bg-slate-50 px-4 py-3 text-base leading-8 text-slate-700 [text-align:justify]"
                     >
                       {highlight}
                     </li>
