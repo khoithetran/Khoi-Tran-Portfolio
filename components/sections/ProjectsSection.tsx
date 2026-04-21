@@ -71,9 +71,9 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                     <div className="space-y-4">
                       {card.sections.map((section) => (
                         <div key={section.heading}>
-                          <p className="mb-1.5 font-[var(--font-mono)] text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                          <h4 className="mb-1.5 font-[var(--font-mono)] text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
                             {section.heading}
-                          </p>
+                          </h4>
                           {section.body && (
                             <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
                               {section.body}
@@ -83,7 +83,7 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                             <ul className="space-y-1">
                               {section.items.map((item) => (
                                 <li key={item} className="flex gap-2 text-sm leading-7 text-[var(--muted)]">
-                                  <span className="mt-[0.35rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                                  <span aria-hidden="true" className="mt-[0.35rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
                                   <span>{item}</span>
                                 </li>
                               ))}
