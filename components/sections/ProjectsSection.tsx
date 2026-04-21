@@ -67,9 +67,36 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                       </a>
                     )}
                   </div>
-                  <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
-                    {card.description}
-                  </p>
+                  {card.sections ? (
+                    <div className="space-y-4">
+                      {card.sections.map((section) => (
+                        <div key={section.heading}>
+                          <p className="mb-1.5 font-[var(--font-mono)] text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                            {section.heading}
+                          </p>
+                          {section.body && (
+                            <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
+                              {section.body}
+                            </p>
+                          )}
+                          {section.items && (
+                            <ul className="space-y-1">
+                              {section.items.map((item) => (
+                                <li key={item} className="flex gap-2 text-sm leading-7 text-[var(--muted)]">
+                                  <span className="mt-[0.35rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-sm leading-7 text-[var(--muted)] [text-align:justify]">
+                      {card.description}
+                    </p>
+                  )}
                   <div className="mt-4 flex flex-wrap gap-2">
                     {card.stack.map((item) => (
                       <span
