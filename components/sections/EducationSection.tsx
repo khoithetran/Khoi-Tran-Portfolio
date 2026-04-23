@@ -28,9 +28,9 @@ export function EducationSection({ content }: EducationSectionProps) {
         </div>
 
         <div className="space-y-4">
-          <article className="rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] flex gap-5">
+          <article className="rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] flex flex-col gap-4 sm:flex-row sm:gap-5">
             {/* Timeline column */}
-            <div className="flex w-36 shrink-0 flex-col items-center">
+            <div className="hidden sm:flex w-36 shrink-0 flex-col items-center">
               <span className="font-[var(--font-mono)] text-base font-semibold text-slate-950 whitespace-nowrap">{edu.school.period}</span>
               <div className="mt-2 min-h-[2rem] w-0.5 flex-1 bg-slate-200" />
             </div>
@@ -38,6 +38,9 @@ export function EducationSection({ content }: EducationSectionProps) {
             {/* Content column */}
             <div className="min-w-0 flex-1">
               {/* School */}
+              <p className="sm:hidden font-[var(--font-mono)] text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 mb-1">
+                {edu.school.period}
+              </p>
               <h3 className="text-lg font-semibold text-slate-950">{edu.school.name}</h3>
               <p className="mt-1 font-[var(--font-mono)] text-xs uppercase tracking-[0.3em] text-[var(--muted)]">
                 {edu.school.degree}
