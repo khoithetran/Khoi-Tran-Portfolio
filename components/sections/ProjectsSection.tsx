@@ -34,16 +34,19 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
             return (
               <article
                 key={card.title}
-                className={`rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] flex gap-5 ${isDateRight ? "flex-row-reverse" : "flex-row"}`}
+                className={`rounded-[1.5rem] bg-white p-6 shadow-[0_2px_16px_rgba(15,23,42,0.09)] flex flex-col gap-4 sm:gap-5 ${isDateRight ? "sm:flex-row-reverse" : "sm:flex-row"}`}
               >
                 {/* Timeline column */}
-                <div className="flex w-36 shrink-0 flex-col items-center">
+                <div className="hidden sm:flex w-36 shrink-0 flex-col items-center">
                   <span className="font-[var(--font-mono)] text-base font-semibold text-slate-950 whitespace-nowrap">{card.period}</span>
                   <div className="mt-2 min-h-[2rem] w-0.5 flex-1 bg-slate-200" />
                 </div>
 
                 {/* Content column */}
                 <div className="min-w-0 flex-1">
+                  <p className="sm:hidden font-[var(--font-mono)] text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 mb-1">
+                    {card.period}
+                  </p>
                   <div className="mb-4 flex flex-wrap items-center gap-3">
                     <h3 className="text-lg font-semibold text-slate-950">{card.title}</h3>
                     {card.href && (
@@ -113,11 +116,11 @@ export function ProjectsSection({ content }: ProjectsSectionProps) {
                     </p>
                     {card.demoCaption && (
                       <>
-                        <div className="grid grid-cols-2 gap-3">
-                          <div className="relative overflow-hidden rounded-[1rem] border border-[var(--line)]" style={{ height: "271.94px" }}>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          <div className="relative overflow-hidden rounded-[1rem] border border-[var(--line)] aspect-[4/3]">
                             <Image src={demo1} alt="Demo detection result 1" fill className="object-cover object-top" />
                           </div>
-                          <div className="relative overflow-hidden rounded-[1rem] border border-[var(--line)]" style={{ height: "271.94px" }}>
+                          <div className="relative overflow-hidden rounded-[1rem] border border-[var(--line)] aspect-[4/3]">
                             <Image src={demo2} alt="Demo detection result 2" fill className="object-cover object-top" />
                           </div>
                         </div>
