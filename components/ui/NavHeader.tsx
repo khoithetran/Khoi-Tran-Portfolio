@@ -145,7 +145,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
           </div>
           <div>
             <p className="text-sm font-medium text-slate-900">{identity[locale].name}</p>
-            <p className="font-[var(--font-mono)] text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
+            <p className="hidden sm:block font-[var(--font-mono)] text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
               {identity[locale].role}
             </p>
           </div>
