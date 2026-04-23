@@ -152,7 +152,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
         </div>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex flex-1 flex-wrap justify-center gap-[10px] text-base text-slate-700">
+        <nav className="hidden lg:flex flex-1 flex-wrap justify-center gap-[10px] text-base text-slate-700">
           {content.nav.map((item) => (
             <a
               key={item.href}
@@ -256,7 +256,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((v) => !v)}
-            className="flex md:hidden h-9 w-9 items-center justify-center rounded-full border border-[var(--line)] bg-white/90 transition hover:bg-slate-700 hover:!text-white hover:border-slate-700"
+            className="flex lg:hidden h-9 w-9 items-center justify-center rounded-full border border-[var(--line)] bg-white/90 transition hover:bg-slate-700 hover:!text-white hover:border-slate-700"
           >
             {menuOpen ? (
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
@@ -273,7 +273,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="absolute left-0 right-0 top-[calc(100%+8px)] z-40 md:hidden glass-card rounded-[1.5rem] px-4 py-3">
+        <div className="absolute left-0 right-0 top-[calc(100%+8px)] z-40 lg:hidden glass-card rounded-[1.5rem] px-4 py-3">
           <nav className="flex flex-col gap-1 text-base text-slate-700">
             {content.nav.map((item) => (
               <a
