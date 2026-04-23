@@ -122,7 +122,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
   }, []);
 
   const navLinkClass = (href: string) =>
-    `rounded-full px-6 py-2 font-semibold transition ${
+    `rounded-full px-3 xl:px-6 py-2 text-sm xl:text-base font-semibold whitespace-nowrap transition ${
       activeSection === getSectionKey(href)
         ? "bg-slate-950 !text-white shadow-sm"
         : "hover:bg-white hover:text-slate-950"
@@ -145,14 +145,17 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
           </div>
           <div>
             <p className="text-sm font-medium text-slate-900">{identity[locale].name}</p>
-            <p className="hidden sm:block font-[var(--font-mono)] text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
+            <p className="hidden sm:block lg:hidden font-[var(--font-mono)] text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
+              {locale === "vi" ? "Kỹ sư AI/ML" : "AI/ML Engineer"}
+            </p>
+            <p className="hidden lg:block font-[var(--font-mono)] text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
               {identity[locale].role}
             </p>
           </div>
         </div>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex flex-1 flex-wrap justify-center gap-[10px] text-base text-slate-700">
+        <nav className="hidden lg:flex flex-1 justify-center gap-1 xl:gap-[10px] text-slate-700">
           {content.nav.map((item) => (
             <a
               key={item.href}
@@ -172,7 +175,7 @@ export function NavHeader({ locale, content, onLocaleChange }: NavHeaderProps) {
             <button
               type="button"
               onClick={() => setContactOpen((v) => !v)}
-              className="contact-btn rounded-full bg-slate-950 px-3 py-2 text-base font-medium !text-white transition duration-200"
+              className="contact-btn rounded-full bg-slate-950 px-3 py-2 text-sm font-medium whitespace-nowrap !text-white transition duration-200"
             >
               {content.contactDropdown.buttonLabel}
             </button>
